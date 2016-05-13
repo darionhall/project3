@@ -10,6 +10,8 @@ var morgan = require('morgan');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+// adding in routing branch
+var styles = requre('./routes/styles');
 
 var app = express();
 
@@ -27,6 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+// adding in routing branch
+app.use('/styles', styles);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
