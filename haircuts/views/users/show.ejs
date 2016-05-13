@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+
+<body class="container-fluid">
+  <header>
+    <% include ../partials/header %>
+  </header>
+
+  <main>
+    <div>
+      <h3><%= style.user_id %></h3>
+      <p><b>Date</b><%= style.date %></p>
+      <p><b>Haircut</b><%= style.media %></p>
+      <p><b>Type of Haircut</b><%= style.type %></p>
+      <p><b>Duration</b><%= style.duration %></p>
+      <p><b>Cost</b><%= style.cost %></p>
+      <p><b>Salon</b><%= style.salon %></p>
+      <p><b>Stylist</b><%= style.stylist %></p>
+      <p><b>Comments</b><%= style.comments %></p>
+
+    </div>
+
+    <a href="/styles" class="btn btn-primary">Back</a>
+    <a href="/styles/<%= style._id %>/edit" class="btn btn-danger">Edit</a>
+  </main>
+
+  <footer>
+    <% include ../partials/footer %>
+  </footer>
+</body>
+</html>
