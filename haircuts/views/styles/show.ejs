@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+
+<body class="container-fluid">
+  <header>
+    <% include ../partials/header %>
+  </header>
+
+  <main>
+    <div>
+      <h3>SHOW</h3>
+      <p><b>Title: </b><%= style.title %></p>
+      <p><b>ID: </b><%= style._id %></p>
+      <p><b>Created: </b><%= style.getCreatedAt() %></p>
+      <p><b>Last Updated: </b><%= style.getUpdatedAt() %></p>
+    </div>
+
+    <a href="/styles" class="btn btn-primary">Back</a>
+    <a href="/styles/<%= style._id %>/edit" class="btn btn-danger">Edit</a>
+  </main>
+
+  <footer>
+    <% include ../partials/footer %>
+  </footer>
+</body>
+</html>
