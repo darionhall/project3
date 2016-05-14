@@ -13,4 +13,4 @@ var UserSchema = new mongoose.Schema({
   style_id: {type: mongoose.Schema.Style.ObjectId, ref:'User'},
 }, {timestamps: true});
 
-module.exports = mongoose.model('Style', UserSchema);
+module.exports = mongoose.model('User', UserSchema);

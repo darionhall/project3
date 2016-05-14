@@ -9,7 +9,7 @@ var imgPath = '/path/to/some/img.png';
 var StyleSchema = new mongoose.Schema({
   type: { type: String,  required: true },
   tools: { type: String, required: true },
-  notes: type: String,
+  notes: String,
   duration: Number,
   media: {data: Buffer, contentType: String, required: true},
   cost: Number,
@@ -17,7 +17,7 @@ var StyleSchema = new mongoose.Schema({
   haircutRating: Number,
   salonName: String,
   salonLocation: [addressSubschema],
-  user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
+  //user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
 }, { timestamps: true });  // createdAt, updatedAt
 
 
