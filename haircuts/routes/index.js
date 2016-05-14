@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var User = require('../models/user');
+var Styles = require('../models/style');
 // var passport = require('passport');
 
 /* GET home page. */
@@ -14,12 +16,13 @@ router.get('/signup', function(req, res, next) {
 
 // POST /signup
 // router.post('/signup', function(req, res, next) {
-//   var signUpStrategy = passport.authenticate('local-signup', {
-//     successRedirect : '/todos',
-//     failureRedirect : '/signup',
-//     failureFlash : true
-//   });
-//   return signUpStrategy(req, res, next);
+// //   var signUpStrategy = passport.authenticate('local-signup', {
+// //     successRedirect : '/todos',
+// //     failureRedirect : '/signup',
+// //     failureFlash : true
+// //   });
+// //   return signUpStrategy(req, res, next);
+//     res.redirect('/user/:id');
 // });
 
 // GET /login

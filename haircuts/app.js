@@ -14,10 +14,12 @@ var morgan = require('morgan');
 //Routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
-/// adding in routing branch
 var styles = require('./routes/styles');
 
 var app = express();
+
+//Connect to database
+mongoose.connect('mongodb://localhost/todos');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,11 +31,17 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Middleware that allows use to use the currentUser in our views and routing
+app.use(function(req, res, next){
+  global.currentUser = req.user;
+  next();
+});
 
 app.use('/', routes);
 app.use('/users', users);
-/// adding in routing branch
 app.use('/styles', styles);
 
 // catch 404 and forward to error handler
@@ -65,6 +73,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;

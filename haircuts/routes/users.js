@@ -4,18 +4,18 @@ var User = require('../models/user');
 var Styles = require('../models/style');
 
 
-var authenticate = function(req, res, next) {
-  if(!req.isAuthenticated()) {
-    res.redirect('/');
-  }
-  else {
-    next();
-  }
-}
+// var authenticate = function(req, res, next) {
+//   if(!req.isAuthenticated()) {
+//     res.redirect('/');
+//   }
+//   else {
+//     next();
+//   }
+// }
 
 
 //SHOW
-router.get('/:id', authenticate, function(req, res, next) {
+router.get('/:id', function(req, res, next) {
   var currentUser = req.user;
   // User.findById(req.params.id)
   if (!currentUser) return next(makeError(res, 'Document not found', 404));
@@ -27,7 +27,7 @@ router.get('/:id', authenticate, function(req, res, next) {
 
 
 //EDIT
-router.get('/:id/edit', authenticate, function(req, res, next) {
+router.get('/:id/edit', function(req, res, next) {
   var currentUser = req.user;
   if (!currentUser) return next(makeError(res, 'Document not found', 404));
   var checked = currentUser.completed ? 'checked' : '';
@@ -36,7 +36,7 @@ router.get('/:id/edit', authenticate, function(req, res, next) {
 
 
 // UPDATE
-router.put('/:id', authenticate, function(req, res, next) {
+router.put('/:id', function(req, res, next) {
   var currentUser = req.user;
   if (!currentUser) return next(makeError(res, 'Document not found', 404));
   else {
@@ -58,7 +58,7 @@ router.put('/:id', authenticate, function(req, res, next) {
 
 
 //DESTROY
-router.delete('/:id', authenticate, function(req, res, next) {
+router.delete('/:id', function(req, res, next) {
   var currentUser = req.user;
   User.findByIdAndRemove(req.params.id)
   .then(function() {
