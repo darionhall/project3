@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
-var Styles = require('../models/styles');
+var Styles = require('../models/style');
 
 
 var authenticate = function(req, res, next) {

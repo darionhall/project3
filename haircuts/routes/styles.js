@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
-var Styles = require('../models/styles');
+var Styles = require('../models/style');
 
 
 
@@ -23,7 +23,7 @@ function makeError(res, message, status) {
 // }
 
 // INDEX
-router.get('/', authenticate, function(req, res, next) {
+router.get('/', function(req, res, next) {
   // get all the styles and render the index view
   var styles = global.currentUser.styles;
   res.render('styles/index', { styles: styles});
@@ -31,7 +31,7 @@ router.get('/', authenticate, function(req, res, next) {
 
 
 // NEW
-router.get('/styles/new', authenticate, function(req, res, next) {
+router.get('/styles/new', function(req, res, next) {
   var style = {
     type: '',
     tools: '',
@@ -48,7 +48,7 @@ router.get('/styles/new', authenticate, function(req, res, next) {
 
 
 // SHOW
-router.get('/:id', authenticate, function(req, res, next) {
+router.get('/:id', function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/show', { style: style} );
@@ -56,7 +56,7 @@ router.get('/:id', authenticate, function(req, res, next) {
 
 
 // CREATE
-router.post('/', authenticate, function(req, res, next) {
+router.post('/', function(req, res, next) {
   var style = {
     type: req.body.type,
     tools: req.body.tools,
@@ -80,14 +80,14 @@ router.post('/', authenticate, function(req, res, next) {
 
 
 // EDIT
-router.get('/:id/edit', authenticate, function(req, res, next) {
+router.get('/:id/edit', function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/edit', { style: style});
 });
 
 // UPDATE
-router.put('/:id', authenticate, function(req, res, next) {
+router.put('/:id', function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   else {
@@ -110,7 +110,7 @@ router.put('/:id', authenticate, function(req, res, next) {
 });
 
 // DESTROY
-router.delete('/:id', authenticate, function(req, res, next) {
+router.delete('/:id', function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   var index = currentUser.styles.indexOf(style);

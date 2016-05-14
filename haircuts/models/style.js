@@ -11,13 +11,13 @@ var StyleSchema = new mongoose.Schema({
   tools: { type: String, required: true },
   notes: String,
   duration: Number,
-  media: {data: Buffer, contentType: String, required: true},
+  media: {data: Buffer, contentType: String},
   cost: Number,
   stylist: String,
   haircutRating: Number,
   salonName: String,
   salonLocation: [addressSubschema],
-  //user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
+  // user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
 }, { timestamps: true });  // createdAt, updatedAt
 
 
