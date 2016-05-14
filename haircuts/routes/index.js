@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 // GET /signup
 router.get('/signup', function(req, res, next) {
-  res.render('signup.ejs'});
+  res.render('signup.ejs');
 });
 
 // POST /signup
@@ -24,7 +24,7 @@ router.get('/signup', function(req, res, next) {
 
 // GET /login
 router.get('/login', function(req, res, next) {
-  res.render('login.ejs'});
+  res.render('login.ejs');
 });
 
 // POST /login

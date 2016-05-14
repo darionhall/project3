@@ -10,7 +10,7 @@ var UserSchema = new mongoose.Schema({
   username: {type: String, required: true},
   password: {type: String, required: true},
   profilePic: {type: String , default: 'http://www.sessionlogs.com/media/icons/defaultIcon.png'},
-  style_id: {type: mongoose.Schema.Style.ObjectId, ref:'User'},
+  // style_id: {type: mongoose.Schema.Style.ObjectId, ref:'User'},
 }, {timestamps: true});
 
-module.exports = mongoose.model('Style', UserSchema);
+module.exports = mongoose.model('User', UserSchema);

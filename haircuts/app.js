@@ -15,7 +15,7 @@ var morgan = require('morgan');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 /// adding in routing branch
-var styles = requre('./routes/styles');
+var styles = require('./routes/styles');
 
 var app = express();
 
