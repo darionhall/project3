@@ -1,3 +1,6 @@
+// ?? var flash = require('connect-flash');
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,9 +11,10 @@ var mongoose = require('mongoose');
 var methodOverride = require('method-override');
 var morgan = require('morgan');
 
+//Routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
-// adding in routing branch
+/// adding in routing branch
 var styles = requre('./routes/styles');
 
 var app = express();
@@ -29,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-// adding in routing branch
+/// adding in routing branch
 app.use('/styles', styles);
 
 // catch 404 and forward to error handler
@@ -39,10 +43,10 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+
 // error handlers
 
-// development error handler
-// will print stacktrace
+// development error handler; will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
@@ -53,8 +57,7 @@ if (app.get('env') === 'development') {
   });
 }
 
-// production error handler
-// no stacktraces leaked to user
+// production error handler; no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
