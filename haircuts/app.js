@@ -1,4 +1,4 @@
-// ?? var flash = require('connect-flash');
+//var flash = require('connect-flash');
 
 
 var express = require('express');
@@ -10,16 +10,20 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override');
 var morgan = require('morgan');
+//passport
+//var passport = require('passport');
+//var session = require('express-session');
+//var flash = require('connect-flash');
 
 //Routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var styles = require('./routes/styles');
+var stylesRouter = require('./routes/styles');
 
 var app = express();
 
 //Connect to database
-mongoose.connect('mongodb://localhost/todos');
+mongoose.connect('mongodb://localhost/styles');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,15 +38,23 @@ app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Middleware that allows use to use the currentUser in our views and routing
-app.use(function(req, res, next){
-  global.currentUser = req.user;
-  next();
-});
-
 app.use('/', routes);
 app.use('/users', users);
-app.use('/styles', styles);
+app.use('/styles', stylesRouter);
+
+//passport
+//app.use(session({ secret: 'WDI Rocks!', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true }));
+//app.use(passport.initialize());
+//app.use(passport.session());
+//app.use(flash());
+
+//require('./config/passport/passport')(passport);
+
+//Middleware that allows use to use the currentUser in our views and routing
+//app.use(function(req, res, next){
+//  global.currentUser = req.user;
+//  next();
+//});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
