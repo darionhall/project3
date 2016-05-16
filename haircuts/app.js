@@ -1,6 +1,4 @@
-//var flash = require('connect-flash');
-
-
+var flash = require('connect-flash');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
