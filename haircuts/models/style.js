@@ -12,7 +12,6 @@ var StyleSchema = new mongoose.Schema({
   tools: { type: String, required: true },
   notes: String,
   duration: String,
-//  media: {data: Buffer, contentType: String},
   cost: Number,
   stylist: String,
   haircutRating: Number,

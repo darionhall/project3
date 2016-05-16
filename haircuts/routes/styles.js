@@ -89,9 +89,9 @@ router.get('/:id/edit', authenticate, function(req, res, next) {
 
 // UPDATE
 router.put('/:id', authenticate, function(req, res, next) {
-  var style = currentUser.styles.id(req.params.id);
-  if (!style) return next(makeError(res, 'Document not found', 404));
-  else {
+ var style = currentUser.styles.id(req.params.id);
+ if (!style) return next(makeError(res, 'Document not found', 404));
+ else {
     style.type = req.body.type;
     style.tools = req.body.tools;
     style.notes = req.body.notes;

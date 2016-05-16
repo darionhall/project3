@@ -31,7 +31,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -55,12 +55,6 @@ app.use(function(req, res, next){
   next();
 });
 
-// Middleware that allows use to use the currentUser in our views and routing
-app.use(function(req, res, next){
- global.currentUser = req.user;
- next();
-});
-
 
 app.use('/', routes);
 app.use('/users', users);
@@ -72,7 +66,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
 
 // error handlers
 
