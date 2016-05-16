@@ -12,26 +12,30 @@ function makeError(res, message, status) {
   return error;
 }
 
-// function authenticate(req, res, next) {
-//   if(!req.isAuthenticated()) {
-//     req.flash('error', 'Please signup or login.');
-//     res.redirect('/');
-//   }
-//   else {
-//     next();
-//   }
-// }
+ function authenticate(req, res, next) {
+  if(!req.isAuthenticated()) {
+    res.redirect('/');
+  }
+  else {
+    next();
+  }
+}
 
 // INDEX
-router.get('/', function(req, res, next) {
+router.get('/', authenticate, function(req, res, next) {
   // get all the styles and render the index view
   var styles = global.currentUser.styles;
   res.render('styles/index', { styles: styles});
 });
 
 
+
 // NEW
+<<<<<<< HEAD
 router.get('/styles/new', function(req, res, next) {
+=======
+router.get('/new', authenticate, function(req, res, next) {
+>>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = {
     type: '',
     tools: '',
@@ -48,7 +52,7 @@ router.get('/styles/new', function(req, res, next) {
 
 
 // SHOW
-router.get('/:id', function(req, res, next) {
+router.get('/:id', authenticate, function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/show', { style: style} );
@@ -56,7 +60,7 @@ router.get('/:id', function(req, res, next) {
 
 
 // CREATE
-router.post('/', function(req, res, next) {
+router.post('/', authenticate, function(req, res, next) {
   var style = {
     type: req.body.type,
     tools: req.body.tools,
@@ -80,19 +84,30 @@ router.post('/', function(req, res, next) {
 
 
 // EDIT
+<<<<<<< HEAD
 router.get('/:id/edit', function(req, res, next) {
+=======
+router.get('/:id/edit', authenticate, function(req, res, next) {
+>>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/edit', { style: style});
 });
+<<<<<<< HEAD
 
 // UPDATE
 router.put('/:id', function(req, res, next) {
+=======
+
+
+// UPDATE
+router.put('/:id', authenticate, function(req, res, next) {
+>>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   else {
     style.type = req.body.type;
-    style.tools = req.body.tools
+    style.tools = req.body.tools;
     style.notes = req.body.notes;
     style.duration = req.body.duration;
     style.media = req.body.media;
@@ -106,11 +121,19 @@ router.put('/:id', function(req, res, next) {
     }, function(err) {
       return next(err);
     });
+<<<<<<< HEAD
   }
 });
 
 // DESTROY
 router.delete('/:id', function(req, res, next) {
+=======
+  };
+});
+
+// DESTROY
+router.delete('/:id', authenticate, function(req, res, next) {
+>>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   var index = currentUser.styles.indexOf(style);
@@ -122,7 +145,5 @@ router.delete('/:id', function(req, res, next) {
     return next(err);
   });
 });
-
-
 
 module.exports = router;
