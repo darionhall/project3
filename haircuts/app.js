@@ -12,9 +12,9 @@ var methodOverride = require('method-override');
 var morgan = require('morgan');
 
 //passport
-//var passport = require('passport');
-//var session = require('express-session');
-//var flash = require('connect-flash');
+var passport = require('passport');
+var session = require('express-session');
+var flash = require('connect-flash');
 
 //Routes
 var routes = require('./routes/index');
@@ -39,25 +39,24 @@ app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+//passport
+app.use(session({ secret: "Don't get a bad haircut", cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
+require('./config/passport/passport')(passport);
+
+//Middleware that allows use to use the currentUser in our views and routing
+app.use(function(req, res, next){
+  global.currentUser = req.user;
+  next();
+});
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/styles', stylesRouter);
-
-//passport
-//app.use(session({ secret: 'WDI Rocks!', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true }));
-//app.use(passport.initialize());
-//app.use(passport.session());
-//app.use(flash());
-
-//require('./config/passport/passport')(passport);
-
-//Middleware that allows use to use the currentUser in our views and routing
-//app.use(function(req, res, next){
-//  global.currentUser = req.user;
-//  next();
-//});
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

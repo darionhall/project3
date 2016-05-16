@@ -117,7 +117,7 @@ router.put('/:id', function(req, res, next) {
 //  else {
   Style.findById(req.params.id)
   .then(function(style) {
-    if (!todo) return next(makeError(res, 'Document not found', 404));
+    if (!style) return next(makeError(res, 'Document not found', 404));
     style.type = req.body.type;
     style.tools = req.body.tools
     style.notes = req.body.notes;

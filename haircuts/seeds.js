@@ -34,7 +34,7 @@ Style.remove({})
   allStyles.forEach(function(style) {
     console.log(style);
   });
-  return Style.findOne({title: 'groceries'});
+  return Style.findOne({type: 'groceries'});
 })
 .then(function(groceries) {
   groceries.completed = true;
