@@ -62,7 +62,7 @@ app.use('/styles', stylesRouter);
 //  next();
 //});
 
-app.use('/styles', styles);
+app.use('/styles',styles);
 app.use(session({ secret: 'No more bad haircuts!' }));
 app.use(passport.initialize());
 app.use(passport.session());
