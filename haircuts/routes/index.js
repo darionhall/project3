@@ -25,6 +25,7 @@ router.post('/signup', function(req, res, next) {
 //     res.redirect('/user/:id');
    });
 
+
 // GET /login
 router.get('/login', function(req, res, next) {
   res.render('login.ejs', { message: req.flash()});
