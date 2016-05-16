@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
     <% include partials/head %>
   </head>
 
-  <body class="container-fluid">
+  <body class="container-fluid" class="photo">
     <header>
       <% include partials/header %>
     </header>
-
     <main>
       <div>
         <h2>Login</h2>
+
           <form method="post" action="/login">
             <div class="form-group">
               <label for="email">Email</label>
@@ -27,9 +28,8 @@
           </form>
       </div>
     </main>
-
-    <footer>
+  </body>
+  <footer>
       <% include partials/footer %>
     </footer>
-  </body>
 </html>

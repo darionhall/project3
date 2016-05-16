@@ -1,8 +1,61 @@
+
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-right {
+  margin-right: 15px;
+}
+
+.navbar-left {
+  margin-left: 15px;
+}
+
+.glyphicon-tree-deciduous {
+  margin-left: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #85CD00;
+  color: #000000;
+}
+
+form {
+  margin-left: 390px;
+  width: 500px;
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-left: 390px;
+  margin-top: 150px;
+  color: #000000;
+  font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  background-color: #222222;
+  color: white;
+  border: none;
+
+}
+
+.btn:hover {
+  background-color: #85DC00;
+  color: #000000;
+}
+
+
+
