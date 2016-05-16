@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+//do we need to reference user model?
 
 //var addressSubschema = {
 //    street: String, number: String, zip: String, city: String

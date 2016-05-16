@@ -15,6 +15,7 @@ router.get('/', function(req, res, next) {
 //});
 
 // POST /signup
+<<<<<<< HEAD
 //router.post('/signup', function(req, res, next) {
 //  var signUpStrategy = passport.authenticate('local-signup', {
 //    successRedirect : '/styles',
@@ -24,6 +25,17 @@ router.get('/', function(req, res, next) {
 //  return signUpStrategy(req, res, next);
 //     res.redirect('/user/:id');
 //   });
+=======
+router.post('/signup', function(req, res, next) {
+  var signUpStrategy = passport.authenticate('local-signup', {
+    successRedirect : '/todos',
+    failureRedirect : '/signup',
+    failureFlash : true
+  });
+  return signUpStrategy(req, res, next);
+    res.redirect('/user/:id');
+});
+>>>>>>> 7b7fda48f7f5c88c070198b2dd807843d567cb51
 
 // GET /login
 //router.get('/login', function(req, res, next) {
