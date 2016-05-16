@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 //var User = require('./models/user');
 var Style = require('./models/style');
 
-mongoose.connect('mongodb://localhost/hairapp') //update based on routes
+mongoose.connect('mongodb://localhost/styles') //update based on routes
 
 // our script will not exit until we have disconnected from the db.
 function quit() {

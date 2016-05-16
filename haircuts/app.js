@@ -1,6 +1,5 @@
 // ?? var flash = require('connect-flash');
 
-
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -22,7 +21,7 @@ var styles = require('./routes/styles');
 var app = express();
 
 //Connect to database
-mongoose.connect('mongodb://localhost/todos');
+mongoose.connect('mongodb://localhost/styles');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
