@@ -1,0 +1,1006 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.09808224392307352,
+            "longitude_delta": 0.0686684899999932
+        },
+        "center": {
+            "latitude": 33.77620873814685,
+            "longitude": -84.34560915
+        }
+    },
+    "total": 40,
+    "businesses": [
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/dada-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 71,
+            "name": "DADA",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/dada-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "menu_date_updated": 1442374562,
+            "phone": "4045232324",
+            "snippet_text": "David is the greatest! Not only does he do an amazing job but he is so friendly! I have easily manageable hair but when through a series of bad haircuts....",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qnSR3dQGPxNCPeTWjDGeQw/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/UTOnfb8fxZM48PtqU3tHKA/ms.jpg",
+            "display_phone": "+1-404-523-2324",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "single_platform",
+            "id": "dada-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "112 Hurt St NE",
+                    "Inman Park",
+                    "Atlanta, GA 30307"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Inman Park"
+                ],
+                "postal_code": "30307",
+                "country_code": "US",
+                "address": [
+                    "112 Hurt St NE"
+                ],
+                "coordinate": {
+                    "latitude": 33.7570821,
+                    "longitude": -84.3539854
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/aviary-beauty-and-wellness-collective-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 44,
+            "name": "Aviary Beauty & Wellness Collective",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/aviary-beauty-and-wellness-collective-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ],
+                [
+                    "Day Spas",
+                    "spas"
+                ],
+                [
+                    "Massage",
+                    "massage"
+                ]
+            ],
+            "menu_date_updated": 1445601529,
+            "phone": "4045772460",
+            "snippet_text": "Alexis is incredible! I've been all over, and truly believe you won't find a better massage in all of Atlanta. I was originally brought in when I bought a...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ETADHH9yCxXgrWum7VhoxQ/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/qRgxm9WGVOIL61Re8f9R6A/ms.jpg",
+            "display_phone": "+1-404-577-2460",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "single_platform",
+            "id": "aviary-beauty-and-wellness-collective-atlanta-2",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "Studioplex 659 Auburn Ave",
+                    "Studio 125",
+                    "Old Fourth Ward",
+                    "Atlanta, GA 30312"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Old Fourth Ward"
+                ],
+                "postal_code": "30312",
+                "country_code": "US",
+                "address": [
+                    "Studioplex 659 Auburn Ave",
+                    "Studio 125"
+                ],
+                "coordinate": {
+                    "latitude": 33.7555642054556,
+                    "longitude": -84.3662525
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/star-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 33,
+            "name": "Star Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/star-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Extensions",
+                    "hair_extensions"
+                ],
+                [
+                    "Hair Stylists",
+                    "hairstylists"
+                ],
+                [
+                    "Men's Hair Salons",
+                    "menshair"
+                ]
+            ],
+            "phone": "4042307827",
+            "snippet_text": "Jo is the shit. Star Salon is also pretty rad as well. If you want a great, fresh cut from someone who genuinely loves to cut hair then I highly recommend...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/dMEgTuahuSN-dDWg-eBQ4g/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/kYnYMaXRi7H8X9UxKuX-tw/ms.jpg",
+            "display_phone": "+1-404-230-7827",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "star-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "331 Elizabeth St",
+                    "Ste D",
+                    "Old Fourth Ward",
+                    "Atlanta, GA 30307"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Old Fourth Ward",
+                    "Poncey-Highland"
+                ],
+                "postal_code": "30307",
+                "country_code": "US",
+                "address": [
+                    "331 Elizabeth St",
+                    "Ste D"
+                ],
+                "coordinate": {
+                    "latitude": 33.763542175293,
+                    "longitude": -84.3584594726562
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/area-4-hair-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 64,
+            "name": "Area 4 Hair Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/area-4-hair-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ],
+                [
+                    "Makeup Artists",
+                    "makeupartists"
+                ]
+            ],
+            "phone": "6787053572",
+            "snippet_text": "I love seeing Tina and have her style my hair. She is so great. I feel like though every time I go there I pay more and more for my haircut. \n\nTrying so new...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_be3l449_cvPWUSCcGMqgA/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/5tvZREhT_5xm4zPc08vxYw/ms.jpg",
+            "display_phone": "+1-678-705-3572",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "area-4-hair-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "1536 Monroe Dr",
+                    "Ste E",
+                    "Morningside / Lenox Park",
+                    "Atlanta, GA 30324"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Morningside / Lenox Park"
+                ],
+                "postal_code": "30324",
+                "country_code": "US",
+                "address": [
+                    "1536 Monroe Dr",
+                    "Ste E"
+                ],
+                "coordinate": {
+                    "latitude": 33.795875,
+                    "longitude": -84.368824
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/mariemarie-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 101,
+            "name": "Mariemarie Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/mariemarie-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "phone": "4048499970",
+            "snippet_text": "In the tune of \"eye of the tiger\"\n\nBlair! Blair! Blair! Blair! Blair!\n\nBlair! Blair! Blair! Blair! Blair!\n\nBlair! Blair! Blair! Blair! Blair!\n\nBlair does...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vx5iR3FCLUU54XqrHk43Pg/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/r07KYrUNVBoS9Xg7sDj2nA/ms.jpg",
+            "display_phone": "+1-404-849-9970",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "mariemarie-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "1388 McLendon Ave NE",
+                    "Candler Park",
+                    "Atlanta, GA 30307"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Candler Park"
+                ],
+                "postal_code": "30307",
+                "country_code": "US",
+                "address": [
+                    "1388 McLendon Ave NE"
+                ],
+                "coordinate": {
+                    "latitude": 33.765362,
+                    "longitude": -84.342064
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/piedmont-barbers-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 102,
+            "name": "Piedmont Barbers",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/piedmont-barbers-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Barbers",
+                    "barbers"
+                ]
+            ],
+            "menu_date_updated": 1442082815,
+            "phone": "4042489999",
+            "snippet_text": "Never had a bad experience thus far. \n\nNothing too pretentious but also doesn't feel like they are about to plop a big ol' bowl on your head and give you a...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/3APV8y6YHxnH54YDTSAg8g/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/EOQHIjwPTymtWmmf6HwVnw/ms.jpg",
+            "display_phone": "+1-404-248-9999",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "single_platform",
+            "id": "piedmont-barbers-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "2350 Cheshire Bridge Rd",
+                    "Ste 202",
+                    "Atlanta, GA 30324"
+                ],
+                "geo_accuracy": 8.0,
+                "postal_code": "30324",
+                "country_code": "US",
+                "address": [
+                    "2350 Cheshire Bridge Rd",
+                    "Ste 202"
+                ],
+                "coordinate": {
+                    "latitude": 33.8194427490234,
+                    "longitude": -84.3518753051758
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/vivid-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 67,
+            "name": "Vivid",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/vivid-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "phone": "4046853557",
+            "snippet_text": "I came here not knowing anything: didn't have any idea about what kind of hair style I want and didn't even know which hair stylist to pick. I just had...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EGNFXREaWqJTsbtKjR9y-A/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/Rr5YKbIUz-XZt11eBlX7dg/ms.jpg",
+            "display_phone": "+1-404-685-3557",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "vivid-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "1401 N Highland Ave",
+                    "Morningside / Lenox Park",
+                    "Atlanta, GA 30306"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Morningside / Lenox Park"
+                ],
+                "postal_code": "30306",
+                "country_code": "US",
+                "address": [
+                    "1401 N Highland Ave"
+                ],
+                "coordinate": {
+                    "latitude": 33.7928696,
+                    "longitude": -84.3516388
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/trophy-room-barber-shop-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 29,
+            "name": "Trophy Room Barber Shop",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/trophy-room-barber-shop-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Barbers",
+                    "barbers"
+                ],
+                [
+                    "Men's Hair Salons",
+                    "menshair"
+                ]
+            ],
+            "phone": "4703551252",
+            "snippet_text": "Michelle gave me a perfect haircut. She listened to what I wanted and made it happen. She was also extremely nice and easy to get along with. I'll...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sfTtT-3E25HlgPpk8_nlQA/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/7KJJVm37PZxaMpk6CNrOHA/ms.jpg",
+            "display_phone": "+1-470-355-1252",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "trophy-room-barber-shop-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "1610 Hosea L Williams Dr NE",
+                    "Edgewood",
+                    "Atlanta, GA 30317"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Edgewood"
+                ],
+                "postal_code": "30317",
+                "country_code": "US",
+                "address": [
+                    "1610 Hosea L Williams Dr NE"
+                ],
+                "coordinate": {
+                    "latitude": 33.753696,
+                    "longitude": -84.335045
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/mary-todd-hairdressing-company-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 50,
+            "name": "Mary Todd Hairdressing Company",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/mary-todd-hairdressing-company-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Barbers",
+                    "barbers"
+                ],
+                [
+                    "Hair Stylists",
+                    "hairstylists"
+                ]
+            ],
+            "phone": "4046815646",
+            "snippet_text": "I had such a wonderful blow-dry experience with Emma the other day! We were visiting the in-laws in Cabbagetown for the weekend and I wanted to get a...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PcH1pKsl7qxwEiZHOeqSmw/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/J1P82YNZ9LNUrql8o1uEpQ/ms.jpg",
+            "display_phone": "+1-404-681-5646",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "mary-todd-hairdressing-company-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "188 Carroll St SE",
+                    "Cabbagetown",
+                    "Atlanta, GA 30312"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Cabbagetown"
+                ],
+                "postal_code": "30312",
+                "country_code": "US",
+                "address": [
+                    "188 Carroll St SE"
+                ],
+                "coordinate": {
+                    "latitude": 33.7495259195566,
+                    "longitude": -84.3680215626955
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/laura-goddard-style-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 17,
+            "name": "Laura Goddard Style",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/laura-goddard-style-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ],
+                [
+                    "Makeup Artists",
+                    "makeupartists"
+                ]
+            ],
+            "phone": "7705472444",
+            "snippet_text": "I just had my first cut with Laura this morning and she did an amazing job. She gave me exactly the cut I was looking for plus explained what she did and...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/5RfuH3gKIuasRV1TE_Wnew/ms.jpg",
+            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/SQo0KVR8l3fR6RSxKIPW5A/ms.jpg",
+            "display_phone": "+1-770-547-2444",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "laura-goddard-style-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "332 Ormond St SE",
+                    "Ste 104",
+                    "Grant Park",
+                    "Atlanta, GA 30315"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Grant Park"
+                ],
+                "postal_code": "30315",
+                "country_code": "US",
+                "address": [
+                    "332 Ormond St SE",
+                    "Ste 104"
+                ],
+                "coordinate": {
+                    "latitude": 33.7316259,
+                    "longitude": -84.3768221
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/cameo-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 25,
+            "name": "Cameo Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/cameo-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "phone": "4048084974",
+            "snippet_text": "My hair had been self cut, salon cut, barber cut and at one point mostly shaved off... And had a good half dozen hair colors in it. I had decided to grow up...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/NmndBSzdnLulO-nmtKBo6w/ms.jpg",
+            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/hq3zi0GDO-1C9FdLf7E2Zg/ms.jpg",
+            "display_phone": "+1-404-808-4974",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "cameo-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "26 Waddell St NE",
+                    "Inman Park",
+                    "Atlanta, GA 30307"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Inman Park"
+                ],
+                "postal_code": "30307",
+                "country_code": "US",
+                "address": [
+                    "26 Waddell St NE"
+                ],
+                "coordinate": {
+                    "latitude": 33.754326,
+                    "longitude": -84.363075
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/urban-evolution-salon-atlanta-3?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 36,
+            "name": "Urban Evolution Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/urban-evolution-salon-atlanta-3?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ],
+                [
+                    "Makeup Artists",
+                    "makeupartists"
+                ],
+                [
+                    "Skin Care",
+                    "skincare"
+                ]
+            ],
+            "phone": "4045777771",
+            "snippet_text": "Shannon at Urban Evolution has been my stylist for over 3 years now and I have no plans on seeing anyone else as long as she's in ATL! She gives a fantastic...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/vTgxnDUV_lB4T5mBi6qPxw/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/Sgcj4HuiYey79BS0lvrmiQ/ms.jpg",
+            "display_phone": "+1-404-577-7771",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "urban-evolution-salon-atlanta-3",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "1042 N Highland Ave NE",
+                    "Virginia Highland",
+                    "Atlanta, GA 30306"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Virginia Highland"
+                ],
+                "postal_code": "30306",
+                "country_code": "US",
+                "address": [
+                    "1042 N Highland Ave NE"
+                ],
+                "coordinate": {
+                    "latitude": 33.7830352783203,
+                    "longitude": -84.3548583984375
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/relish-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 26,
+            "name": "Relish Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/relish-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "menu_date_updated": 1444390043,
+            "phone": "4042481009",
+            "snippet_text": "So this is a review for Relish Jr. which is their kid's salon right next door.  I was looking for a place to give my son a Mohawk cut for his 5th birthday....",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/18b8eSI0QVpF84KWfY9Rpw/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/047MmV4srC3AfiRr2JSAKg/ms.jpg",
+            "display_phone": "+1-404-248-1009",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "single_platform",
+            "id": "relish-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "924 Garrett St",
+                    "Ste F & G",
+                    "Ormewood Park",
+                    "Atlanta, GA 30316"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Ormewood Park"
+                ],
+                "postal_code": "30316",
+                "country_code": "US",
+                "address": [
+                    "924 Garrett St",
+                    "Ste F & G"
+                ],
+                "coordinate": {
+                    "latitude": 33.7407240185154,
+                    "longitude": -84.3576929756823
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/axiom-cutler-salon-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 59,
+            "name": "Axiom Cutler Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/axiom-cutler-salon-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Barbers",
+                    "barbers"
+                ]
+            ],
+            "menu_date_updated": 1442098923,
+            "phone": "4048760080",
+            "snippet_text": "Great cut at an amazing price - the staff is friendly, professional, accommodating... I don't know why I haven't always been getting my hair cut here. I am...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/KpLHDhTea8ponaVCuCouKg/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/cc4afe21892e/assets/img/default_avatars/user_medium_square.png",
+            "display_phone": "+1-404-876-0080",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "single_platform",
+            "id": "axiom-cutler-salon-atlanta-2",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "931 Monroe Dr NE",
+                    "Ste  C208",
+                    "Midtown",
+                    "Atlanta, GA 30308"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Midtown"
+                ],
+                "postal_code": "30308",
+                "country_code": "US",
+                "address": [
+                    "931 Monroe Dr NE",
+                    "Ste  C208"
+                ],
+                "coordinate": {
+                    "latitude": 33.7797564,
+                    "longitude": -84.3678467
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/sweetgrass-too-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 28,
+            "name": "Sweetgrass Too",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/sweetgrass-too-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "phone": "4043777077",
+            "snippet_text": "Go see Chealse!!! I have difficult hair to color as it gets REALLY brassy and yellow every time I have it highlighted and lightened.  My last experience was...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/I5P0Drrfc5g8mamO6jl7-g/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/s7icsBdfjRck595XN0dYNA/ms.jpg",
+            "display_phone": "+1-404-377-7077",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "sweetgrass-too-atlanta-2",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "378 Clifton Rd NE",
+                    "Atlanta, GA 30307"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "30307",
+                "country_code": "US",
+                "address": [
+                    "378 Clifton Rd NE"
+                ],
+                "coordinate": {
+                    "latitude": 33.7645123,
+                    "longitude": -84.3330124
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/shear-love-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 98,
+            "name": "Shear Love",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/shear-love-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "menu_date_updated": 1442081533,
+            "phone": "4048851133",
+            "snippet_text": "Really great haircut! I'll definitely be back.\n\nI've had a couple sub par haircuts since moving back to Atlanta , so this was a welcome relief from the...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/gW7ONfgHPs4jYXAutwiI6A/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/3SlJ17ciAC55wPL9qhT9wA/ms.jpg",
+            "display_phone": "+1-404-885-1133",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "shear-love-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "698 Cleburne Ter",
+                    "Poncey-Highland",
+                    "Atlanta, GA 30306"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Poncey-Highland"
+                ],
+                "postal_code": "30306",
+                "country_code": "US",
+                "address": [
+                    "698 Cleburne Ter"
+                ],
+                "coordinate": {
+                    "latitude": 33.773441350118,
+                    "longitude": -84.35356668627
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/melrose-and-mcqueen-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 54,
+            "name": "Melrose and McQueen Salon",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/melrose-and-mcqueen-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "phone": "4049095245",
+            "snippet_text": "I've been coming to Melrose & McQueen for three years now, and I can't rave enough about it or about Carla - my favorite stylist, who everyone should try to...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/nQoplKmg-Q0uZy3nfBhV7A/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/Lar94x32q-iEa3SjqKjWCA/ms.jpg",
+            "display_phone": "+1-404-909-5245",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "melrose-and-mcqueen-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "337 Elizabeth St",
+                    "Old Fourth Ward",
+                    "Atlanta, GA 30307"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Old Fourth Ward",
+                    "Poncey-Highland"
+                ],
+                "postal_code": "30307",
+                "country_code": "US",
+                "address": [
+                    "337 Elizabeth St"
+                ],
+                "coordinate": {
+                    "latitude": 33.7637374981823,
+                    "longitude": -84.3588356969589
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/bb-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 12,
+            "name": "BB Salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/bb-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "menu_date_updated": 1442031458,
+            "phone": "6787051605",
+            "snippet_text": "I have lived in the Atlanta area for a year.  And it's embarrassing to admit that for more than 12 months I have totally neglected my hair and have not had...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/r_yjnQPR_xp0xWySDXsHKA/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/7OYgrJ6QYTqTBw4Mg14k7Q/ms.jpg",
+            "display_phone": "+1-678-705-1605",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "menu_provider": "single_platform",
+            "id": "bb-salon-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "2227 College Ave",
+                    "Atlanta, GA 30317"
+                ],
+                "geo_accuracy": 8.0,
+                "postal_code": "30317",
+                "country_code": "US",
+                "address": [
+                    "2227 College Ave"
+                ],
+                "coordinate": {
+                    "latitude": 33.7645798,
+                    "longitude": -84.3144073
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "http://m.yelp.com/biz/steve-hightower-hair-salon-and-day-spa-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 38,
+            "name": "Steve Hightower Hair Salon & Day Spa",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "http://www.yelp.com/biz/steve-hightower-hair-salon-and-day-spa-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ],
+                [
+                    "Day Spas",
+                    "spas"
+                ],
+                [
+                    "Eyelash Service",
+                    "eyelashservice"
+                ]
+            ],
+            "menu_date_updated": 1461161317,
+            "phone": "4042649006",
+            "snippet_text": "Excellent customer service combined with the latest techniques for hair, body, and makeup. If you're looking for true experts in the business go see Steve...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BRduF0NM6yhke0jpOLkG5w/ms.jpg",
+            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/fhR2-bbK5LFfQDiGo7OfJw/ms.jpg",
+            "display_phone": "+1-404-264-9006",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "steve-hightower-hair-salon-and-day-spa-atlanta",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "646 Lindbergh Way",
+                    "Buckhead",
+                    "Atlanta, GA 30324"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Buckhead",
+                    "Lindbergh"
+                ],
+                "postal_code": "30324",
+                "country_code": "US",
+                "address": [
+                    "646 Lindbergh Way"
+                ],
+                "coordinate": {
+                    "latitude": 33.8207915762937,
+                    "longitude": -84.3668844066519
+                },
+                "state_code": "GA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 5.0,
+            "mobile_url": "http://m.yelp.com/biz/union16-salon-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+            "review_count": 19,
+            "name": "union16 salon",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+            "url": "http://www.yelp.com/biz/union16-salon-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+            "categories": [
+                [
+                    "Hair Salons",
+                    "hair"
+                ]
+            ],
+            "phone": "4042210440",
+            "snippet_text": "Union 16 is a jewel in a sea of cubic zirconia. It's the real deal....and never fails to make me feel shiny and sparkly!!",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/u87oxVXEcGwLDxxespTKmQ/ms.jpg",
+            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/-fMAklj0FW7ksLfP5HshJg/ms.jpg",
+            "display_phone": "+1-404-221-0440",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+            "id": "union16-salon-atlanta-2",
+            "is_closed": false,
+            "location": {
+                "city": "Atlanta",
+                "display_address": [
+                    "659 Auburn Ave",
+                    "Ste 114",
+                    "Old Fourth Ward",
+                    "Atlanta, GA 30312"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Old Fourth Ward"
+                ],
+                "postal_code": "30312",
+                "country_code": "US",
+                "address": [
+                    "659 Auburn Ave",
+                    "Ste 114"
+                ],
+                "coordinate": {
+                    "latitude": 33.7562007,
+                    "longitude": -84.3662748
+                },
+                "state_code": "GA"
+            }
+        }
+    ]
+}

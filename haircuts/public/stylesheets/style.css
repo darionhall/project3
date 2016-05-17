@@ -1,6 +1,11 @@
 
+
+html, body {
+  height:100%;
+}
+
 body {
-  padding: 0px;
+  padding: 18px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -67,5 +72,74 @@ h2 {
   color: #FFFFFF;
 }
 
+footer {
+  width: 100%;
+  height: 44px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+/*MAP*/
+canvas{
+  margin-bottom: 60px
+}
+#geocoder-container {
+    position: relative;
+    bottom: 300px;
+    width: 50%;
+    margin-top: 10px;
+}
 
+#geocoder-container > div {
+    min-width:50%;
+    margin-right:10%;
+}
+#directions{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+.directions-control.directions-control-directions{
+  position: fixed;
+}
+.mapbox-directions-route-summary{
+
+}
+#directions-control{
+  bottom: 150px;
+  margin-top: 0px;
+  padding-top: 75px;
+
+}
+#geocoder-container > div {
+    min-width:50%;
+    margin-right:10%;
+}
+#map{
+  position:relative;
+  min-height: 300px;
+  min-width: auto;
+}
+
+#info {
+  position:fixed;
+  bottom: 47px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0;
+  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+/* For non touch devices, move control out of the way at small window widths */
+@media (max-width: 100%) {
+/* 767px - 15px for scrollbar */
+.mapzen-demo-iframed .mapboxgl-ctrl-topright {
+  top: 50px;
+  }
+}
 

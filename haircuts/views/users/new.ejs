@@ -10,17 +10,12 @@
   </header>
 
   <main>
-    <div>
-      <h3><%= user.user_id %></h3>
-
-      <p><b>Email</b><%= user.email %></p>
-
-    </div>
-
-
-    <a href="/users" class="btn btn-primary">Back</a>
-    <a href="/users/<%= user._id %>/edit" class="btn btn-danger">Edit</a>
-
+    <h3>NEW</h3>
+    <form class="style-form" action="/styles" method="post">
+      <% include _form %>
+      <a href="/styles" class="btn btn-primary">Back</a>
+      <button type="submit" class="btn btn-success">Save</button>
+    </form>
   </main>
 
   <footer>
