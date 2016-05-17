@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
   <% include ../partials/head %>
 </head>
 
@@ -14,11 +15,12 @@
       <h3>styles:</h3>
       <% styles.forEach(function(style) { %>
         <h4>
-          <form method="POST" action="/styles/<%= style._id %>?_method=DELETE">
+          <form method="POST" action="/styles/<%= style._id %>?_method=DELETE" class="stylebox">
+          <button type="submit" class="btn btn-xs btn-danger">Delete</button>
             <a href="/styles/<%= style._id %>">
               <%= style.type %>
             </a>
-            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
+
           </form>
         </h4>
       <% }) %>

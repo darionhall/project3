@@ -1,0 +1,16 @@
+
+body {
+  background: url(https://ce.uwc.edu/uploads/course/watercolor.jpg);
+  background-size: 1279px 750px;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+}
+
+.stylebox {
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  float: left;
+  margin: 40px;
+}
