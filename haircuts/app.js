@@ -9,6 +9,22 @@ var mongoose = require('mongoose');
 var methodOverride = require('method-override');
 var morgan = require('morgan');
 
+//sendgrid (email)
+var sendgrid  = require('sendgrid')('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');
+
+var payload   = {
+  to      : 'darionhall@gmail.com',
+  from    : 'darionhall@gmail2.com',
+  subject : 'Saying Hi',
+  text    : 'This is my first email through SendGrid'
+}
+
+sendgrid.send(payload, function(err, json) {
+  if (err) { console.error(err); }
+  console.log(json);
+});
+
+
 //passport
 var passport = require('passport');
 var session = require('express-session');

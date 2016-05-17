@@ -5,6 +5,7 @@ var Style = require('../models/style');
 
 
 
+
 function makeError(res, message, status) {
   res.statusCode = status;
   var error = new Error(message);
@@ -53,6 +54,27 @@ router.get('/:id', authenticate, function(req, res, next) {
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/show', { style: style} );
 });
+
+
+//EMAIL
+// router.post('/:id/email', authenticate, function(req, res; next) {
+//   var style = currentUser.styles.id(req.params.id);
+//   var sendgrid  = require('sendgrid')('SG.vh78oAO3RcOtQVq1X9I6DQ.0E_nNXF3eXWGr3FwBdTkpbEFd');
+
+//   var payload   = {
+//     to      : 'darionhall@gmail.com',
+//     from    : 'darionhall@gmail2.com',
+//     subject : 'Saying Hi',
+//     text    : 'This is my first email through SendGrid'
+//   }
+
+//   sendgrid.send(payload, function(err, json) {
+//     if (err) { console.error(err); }
+//     console.log(json);
+//   });
+//     if (!style) return next(makeError(res, 'Document not found', 404));
+//     res.render('styles/email', { style: style} );
+//   });
 
 
 // CREATE

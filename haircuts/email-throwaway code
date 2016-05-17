@@ -1,0 +1,98 @@
+// vh78oAO3RcOtQVq1X9I6DQ
+
+var sendgrid  = require('sendgrid')('SG.vh78oAO3RcOtQVq1X9I6DQ.0E_nNXF3eXWGr3FwBdTkpbEFd');
+
+// var email = new sendgrid.Email(params);
+
+
+var payload   = {
+  to      : 'darionhall@gmail.com',
+  from    : 'darionhall@gmail2.com',
+  subject : 'Saying Hi',
+  text    : 'This is my first email through SendGrid'
+}
+
+sendgrid.send(payload, function(err, json) {
+  if (err) { console.error(err); }
+  console.log(json);
+});
+
+
+
+
+
+
+
+/*
+reference websites:
+https://github.com/sendgrid/sendgrid-nodejs
+https://www.npmjs.com/package/sendgrid-nodejs
+*/
+-----------------------------------------------------
+//https://github.com/sendgrid/sendgrid-nodejs
+
+var sendgrid  = require('sendgrid')('SG.vh78oAO3RcOtQVq1X9I6DQ.0E_nNXF3eXWGr3FwBdTkpbEFd');
+
+vh78oAO3RcOtQVq1X9I6DQ
+-----------------------------------------------------
+
+var email  = new sendgrid.Email(emailParams); //1.
+
+-----------------------------------------------------
+
+var emailParams = {     // 1.
+  to: [],
+  toName: '',
+  from: [],
+  fromName: '',
+  subject: '',
+  text: '',
+  date: '',
+  files: [{Style.findById(req.params.id)}]
+};
+
+-----------------------------------------------------
+
+var payload   = {
+  to      : 'to@example.com',
+  from    : 'from@other.com',
+  subject : 'Saying Hi',
+  text    : 'This is my first email through SendGrid'
+}
+
+//////////////////////////////////////////////////////
+ /////////////     -or-  //////////////////////
+ ///////////////////////////////////////////////////
+
+//https://www.npmjs.com/package/sendgrid-nodejs
+
+var SendGrid = require('sendgrid-nodejs').SendGrid;
+var sendgrid = new SendGrid(user, key);
+sendgrid.send({
+  to: 'example@example.com',
+  from: 'other@example.com',
+  subject: 'Hello World',
+  text: 'My first email through SendGrid'
+});
+-----------------------------------------------------
+
+var email = new Email(optionalParams); // 2.
+-----------------------------------------------------
+
+var email = new Email ({    // 2.
+  to: 'sample@sample.com',
+  from: 'sample@sample.com',
+  subject: '',
+  text: ''
+});
+
+// Add other to addresses
+email.addTo('moo@cow.com');
+
+-or-
+
+// addTo also takes an array
+email.addTo(['solid@snake.com', 'liquid@snake.com']);
+
+
+-----------------------------------------------------
