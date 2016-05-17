@@ -1,0 +1,30 @@
+
+body {
+  background: no-repeat center center fixed;
+  background-image: url(http://3.bp.blogspot.com/-jYkLwab4jkU/UFMVkotzMbI/AAAAAAAABb4/e_ESqgLIECY/s1600/reusage-blog-free-texture-paper-light-blue-watercolor-surfing-ocean-waves-of-stains.png);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  margin: 0px;
+  padding: 0px;
+}
+
+.stylebox {
+  background-color: #222222;
+  padding: 10px;
+  width: 220px;
+  float: left;
+  margin: 40px 0px 40px 79px;
+  border-radius: 10px;
+}
+
+h3 {
+  font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-left: 570px;
+}

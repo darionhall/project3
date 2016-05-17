@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
   <% include ../partials/head %>
 </head>
 
@@ -11,19 +12,20 @@
 
   <main>
     <div>
-      <h3>styles:</h3>
+      <h3>styles: <a href="/styles/new" class="btn btn-primary">New</a></h3>
       <% styles.forEach(function(style) { %>
         <h4>
-          <form method="POST" action="/styles/<%= style._id %>?_method=DELETE">
+          <form method="POST" action="/styles/<%= style._id %>?_method=DELETE" class="stylebox">
+          <button type="submit" class="btn btn-xs btn-danger">Delete</button>
             <a href="/styles/<%= style._id %>">
-              <%= style.type %>
+              <!--<%= style.type %>-->
+              <img src="http://www.menshairstylestoday.com/wp-content/uploads/2015/11/Hot-Hipster-Hairstyles-8.jpg" height="200px" width="200px">
             </a>
-            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
+
           </form>
         </h4>
       <% }) %>
     </div>
-    <a href="/styles/new" class="btn btn-primary">New</a>
   </main>
 
   <footer>

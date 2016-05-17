@@ -1,0 +1,20 @@
+body {
+
+  background: url(https://img0.etsystatic.com/055/1/9943706/il_fullxfull.717507572_gpnj.jpg);
+  background-size: 1279px 750px;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+}
+
+label {
+  color: #FFFFFF;
+}
+
+form {
+  margin-left: 390px;
+  width: 500px;
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 15px;
+}

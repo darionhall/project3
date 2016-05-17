@@ -11,13 +11,16 @@
 
   <main>
     <div>
-      <h3><%= style.user_id %></h3>
+      <h3><%= user.user_id %></h3>
+
       <p><b>Email</b><%= user.email %></p>
 
     </div>
 
-    <a href="/styles" class="btn btn-primary">Back</a>
-    <a href="/styles/<%= style._id %>/edit" class="btn btn-danger">Edit</a>
+
+    <a href="/users" class="btn btn-primary">Back</a>
+    <a href="/users/<%= user._id %>/edit" class="btn btn-danger">Edit</a>
+
   </main>
 
   <footer>

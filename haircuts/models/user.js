@@ -7,7 +7,7 @@ var Style = require('./style');
 
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
-var Todo = require('./style');
+var User = require('./user');
 
 var User = new mongoose.Schema({
   local : {
