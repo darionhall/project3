@@ -37,20 +37,34 @@ h2 {
   font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.btn {
+.btn-danger {
   background-color: #222222;
   color: white;
   border: none;
+  padding-left: 80px;
+  padding-bottom: 10px;
 
 }
 
-.btn:hover {
-  background-color: #85DC00;
-  color: #000000;
+.btn-danger:hover {
+  background-color: #222222;
+  color: #FFFFFF;
 }
 
 .navebar-default {
   position: fixed;
+}
+
+.btn-primary {
+  background-color: #222222;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #222222;
+  color: #FFFFFF;
 }
 
 

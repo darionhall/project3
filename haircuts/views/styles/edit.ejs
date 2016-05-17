@@ -17,6 +17,12 @@
       <% include _form %>
       <a href="/styles/<%= style._id %>" class="btn btn-primary">Back</a>
       <button type="submit" class="btn btn-success">Save</button>
+      <form method="POST" action="/styles/<%= style._id %>?_method=DELETE" class="stylebox">
+          <button type="submit" class="btn btn-xs btn-danger">Delete</button>
+            <a href="/styles/<%= style._id %>">
+            </a></form>
+
+
     </form>
   </main>
 
