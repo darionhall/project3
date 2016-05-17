@@ -18,8 +18,7 @@
       <div class="form-group">
         <label for="avatar_url">Picture</label>
           <input type="file" id="file_input"/>
-          <p id="status">Please select a file</p>
-          <img style="border:1px solid gray; width:300px" src="" alt="">
+          <img src="" alt="">
           <input type="hidden" id="avatar_url" name:"avatar_url" value="/images/default.png">
       </div>
 
@@ -94,6 +93,9 @@
                  name="haircutRating"
                  value="<%= style.haircutRating %>"/>
       </div>
+
+      <a href="/styles" class="btn btn-primary">Back</a>
+      <button type="submit" class="btn btn-success">Save</button>
     </form>
 
   </main>

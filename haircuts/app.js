@@ -27,7 +27,7 @@ var stylesRouter = require('./routes/styles');
 var app = express();
 
 //Connect to database
-var mongoUri = process.env.MONGODB_URI ||
+var mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/haircuts'
 mongoose.connect(mongoUri);
 
 // view engine setup
