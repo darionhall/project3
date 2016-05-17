@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var fs = require('fs');
 //var User = require('../models/user');
 var Style = require('../models/style');
 
@@ -37,11 +38,11 @@ router.get('/new', authenticate, function(req, res, next) {
     tools: '',
     notes: '',
     duration: '',
-    media: '',
     cost: '',
     stylist: '',
     haircutRating: '',
-    salonName: ''
+    salonName: '',
+    avatar_url: ''
   };
   res.render('styles/new', { style: style});
 });
@@ -62,11 +63,11 @@ router.post('/', authenticate, function(req, res, next) {
     tools: req.body.tools,
     notes: req.body.notes,
     duration: req.body.duration,
-    media: req.body.media,
     cost: req.body.cost,
     stylist: req.body.stylist,
     haircutRating: req.body.haircutRating,
-    salonName: req.body.salonName
+    salonName: req.body.salonName,
+    avatar_url: req.body.avatar_url
   };
   /* Since a user's styles are an embedded document, we just need to push a new style to the user's list of styles and save the user. */
   currentUser.styles.push(style);
@@ -96,11 +97,11 @@ router.put('/:id', authenticate, function(req, res, next) {
     style.tools = req.body.tools;
     style.notes = req.body.notes;
     style.duration = req.body.duration;
-    style.media = req.body.media;
     style.cost = req.body.cost;
     style.stylist = req.body.stylist;
     style.haircutRating = req.body.haircutRating;
     style.salonName = req.body.salonName;
+    style.avatar_url = req.body.avatar_url;
     currentUser.save()
     .then(function(saved) {
       res.redirect('/styles');
@@ -123,5 +124,6 @@ router.delete('/:id', authenticate, function(req, res, next) {
     return next(err);
   });
 });
+
 
 module.exports = router;

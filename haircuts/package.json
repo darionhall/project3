@@ -6,6 +6,7 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "aws-sdk": "^2.3.11",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.13.2",
     "connect-flash": "^0.1.1",
@@ -14,10 +15,12 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "express-session": "^1.13.0",
+    "fs": "0.0.2",
     "lodash": "^4.12.0",
     "method-override": "^2.3.5",
     "mongoose": "^4.4.17",
     "morgan": "~1.6.1",
+    "multer": "~1.1.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.0"

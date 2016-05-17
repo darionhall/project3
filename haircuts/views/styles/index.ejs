@@ -16,12 +16,10 @@
       <% styles.forEach(function(style) { %>
         <h4>
           <form method="POST" action="/styles/<%= style._id %>?_method=DELETE" class="stylebox">
-          <button type="submit" class="btn btn-xs btn-danger">Delete</button>
             <a href="/styles/<%= style._id %>">
-              <!--<%= style.type %>-->
-              <img src="http://www.menshairstylestoday.com/wp-content/uploads/2015/11/Hot-Hipster-Hairstyles-8.jpg" height="200px" width="200px">
             </a>
-
+            <img src="<%= style.avatar_url" alt="">
+            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
           </form>
         </h4>
       <% }) %>

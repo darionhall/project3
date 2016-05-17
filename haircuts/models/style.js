@@ -4,8 +4,6 @@ var mongoose = require('mongoose');
 var addressSubschema = {
     street: String, number: String, zip: String, city: String
 }
-// img path
-var imgPath = '/path/to/some/img.png';
 
 var StyleSchema = new mongoose.Schema({
   type: { type: String,  required: true },
@@ -17,6 +15,7 @@ var StyleSchema = new mongoose.Schema({
   haircutRating: Number,
   salonName: String,
   salonLocation: [addressSubschema],
+  avatar_url: String
   // user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
 }, { timestamps: true });  // createdAt, updatedAt
 
