@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>TODOs
+        <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
       </a>
     </div>
 
@@ -27,15 +27,6 @@
 <div class="flash">
   <% if (typeof message !== 'undefined') { %>
     <% if (typeof message.error !== 'undefined' && message.error.length > 0) { %>
-<<<<<<< HEAD
-      <div class='bg-danger'><%= message.error %></div>
-    <% } %>
-    <% if (typeof message.info !== 'undefined' && message.info.length > 0) { %>
-      <div class='bg-info'><%= message.info %></div>
-    <% } %>
-    <% if (typeof message.success !== 'undefined' && message.success.length > 0) { %>
-      <div class='bg-success'><%= message.success %></div>
-=======
       <div class="bg-danger"><%= message.error %></div>
     <% } %>
     <% if (typeof message.info !== 'undefined' && message.info.length > 0) { %>
@@ -43,7 +34,6 @@
     <% } %>
     <% if (typeof message.success !== 'undefined' && message.success.length > 0) { %>
       <div class="bg-success"><%= message.success %></div>
->>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
     <% } %>
   <% } %>
 </div>

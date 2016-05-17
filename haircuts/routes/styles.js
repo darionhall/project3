@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/user');
-var Styles = require('../models/style');
+//var User = require('../models/user');
+var Style = require('../models/style');
 
 
 
@@ -31,11 +31,7 @@ router.get('/', authenticate, function(req, res, next) {
 
 
 // NEW
-<<<<<<< HEAD
-router.get('/styles/new', function(req, res, next) {
-=======
 router.get('/new', authenticate, function(req, res, next) {
->>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = {
     type: '',
     tools: '',
@@ -84,25 +80,15 @@ router.post('/', authenticate, function(req, res, next) {
 
 
 // EDIT
-<<<<<<< HEAD
-router.get('/:id/edit', function(req, res, next) {
-=======
 router.get('/:id/edit', authenticate, function(req, res, next) {
->>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/edit', { style: style});
 });
-<<<<<<< HEAD
-
-// UPDATE
-router.put('/:id', function(req, res, next) {
-=======
 
 
 // UPDATE
 router.put('/:id', authenticate, function(req, res, next) {
->>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   else {
@@ -121,19 +107,11 @@ router.put('/:id', authenticate, function(req, res, next) {
     }, function(err) {
       return next(err);
     });
-<<<<<<< HEAD
-  }
-});
-
-// DESTROY
-router.delete('/:id', function(req, res, next) {
-=======
   };
 });
 
 // DESTROY
 router.delete('/:id', authenticate, function(req, res, next) {
->>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   var index = currentUser.styles.indexOf(style);

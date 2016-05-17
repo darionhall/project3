@@ -17,7 +17,7 @@ var flash = require('connect-flash');
 //Routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var styles = require('./routes/styles');
+var stylesRouter = require('./routes/styles');
 
 var app = express();
 
@@ -37,6 +37,7 @@ app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 //passport
 app.use(session({ secret: "Don't get a bad haircut", cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
@@ -53,26 +54,7 @@ app.use(function(req, res, next){
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/styles', styles);
-
-// This middleware will allow us to use the currentUser in our views and routes.
-app.use(function (req, res, next) {
-  global.currentUser = req.user;
-  next();
-});
-
-
-
-//Middleware that allows use to use the currentUser in our views and routing
-app.use(function(req, res, next){
-  global.currentUser = req.user;
-  next();
-});
-
-app.use('/', routes);
-app.use('/users', users);
 app.use('/styles', stylesRouter);
->>>>>>> e8989f4c8d4be545705688cb1047098003fa5922
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
