@@ -2,9 +2,6 @@
 
 var sendgrid  = require('sendgrid')('SG.vh78oAO3RcOtQVq1X9I6DQ.0E_nNXF3eXWGr3FwBdTkpbEFd');
 
-// var email = new sendgrid.Email(params);
-
-
 var payload   = {
   to      : 'darionhall@gmail.com',
   from    : 'darionhall@gmail2.com',
