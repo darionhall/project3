@@ -9,7 +9,7 @@ var imgPath = '/path/to/some/img.png';
 
 var StyleSchema = new mongoose.Schema({
   type: { type: String,  required: true },
-  tools: { type: String, required: true },
+  tools: { type: String},
   notes: String,
   duration: String,
 //  media: {data: Buffer, contentType: String},

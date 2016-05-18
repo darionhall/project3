@@ -1,5 +1,3 @@
-
-
 html, body {
   height:100%;
   padding-left: 0px;
@@ -98,7 +96,12 @@ footer {
   text-align: center;
   color: grey;
 }
+
 /*MAP*/
+
+.sidebar {
+  width:33.3333%;
+  }
 canvas{
   margin-bottom: 60px
 }
