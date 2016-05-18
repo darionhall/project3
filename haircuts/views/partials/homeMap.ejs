@@ -2,7 +2,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibGNhY2VkYSIsImEiOiIzNmM4MGRlN2I4NDhiY2UxZjA4MmJjZjE5OWEzYjUzNSJ9.Wc5KTJpWxmpxVMZfcuEQNg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v8',
+    style: 'mapbox://styles/mapbox/light-v8',
     center: [-84.389298, 33.747120],
     zoom: 12
 });
@@ -20,17 +20,10 @@ map.on('load', function() {
         "type": "geojson",
         "data": {
             "type": "FeatureCollection",
+            // "properties": {
+            //     "fillColor": "#3BB2D0"
+            // },
             "features": []
-        }
-    });
-
-    map.addLayer({
-        "id": "point",
-        "source": "single-point",
-        "type": "circle",
-        "paint": {
-            "circle-radius": 10,
-            "circle-color": "#007cbf"
         }
     });
 
@@ -45,6 +38,336 @@ var directions = new mapboxgl.Directions({
     container: 'directions' // Optional. Specify a unique container for the control to be added to.
 });
 map.addControl(new mapboxgl.Directions());
+
+//******************LOCATIONS************************//
+//******************LOCATIONS************************//
+//******************LOCATIONS************************//
+map.on('load', function () {
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3662525, 33.7555642054556]
+                },
+                "properties": {
+                    "title": "Aviary Organic",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/dada-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qnSR3dQGPxNCPeTWjDGeQw/ms.jpg",
+                    "display_phone": "+1-404-523-2324"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3539854,33.7570821]
+                },
+                "properties": {
+                    "title": "DADA Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/aviary-beauty-and-wellness-collective-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ETADHH9yCxXgrWum7VhoxQ/ms.jpg",
+                    "display_phone": "+1-404-577-2460"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3584594726562,33.763542175293]
+                },
+                "properties": {
+                    "title": "Star Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/star-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/dMEgTuahuSN-dDWg-eBQ4g/ms.jpg",
+                    "display_phone": "+1-404-230-7827"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.368824,33.795875]
+                },
+                "properties": {
+                    "title": "Area 4 Hair Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/area-4-hair-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_be3l449_cvPWUSCcGMqgA/ms.jpg",
+                    "display_phone": "+1-678-705-3572"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.342064,33.765362]
+                },
+                "properties": {
+                    "title": "Mariemarie Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/mariemarie-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vx5iR3FCLUU54XqrHk43Pg/ms.jpg",
+                    "display_phone": "+1-404-849-9970"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3516388,33.7928696]
+                },
+                "properties": {
+                    "title": "Vivid",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/vivid-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EGNFXREaWqJTsbtKjR9y-A/ms.jpg",
+                    "display_phone": "+1-404-685-3557"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.335045,33.753696]
+                },
+                "properties": {
+                    "title": "Trophy Room Barber Shop",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/trophy-room-barber-shop-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sfTtT-3E25HlgPpk8_nlQA/ms.jpg",
+                    "display_phone": "+1-470-355-1252"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3680215626955,33.7495259195566]
+                },
+                "properties": {
+                    "title": "Mary Todd Hairdressing Company",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/mary-todd-hairdressing-company-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PcH1pKsl7qxwEiZHOeqSmw/ms.jpg",
+                    "display_phone": "+1-404-681-5646"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3768221,33.7316259]
+                },
+                "properties": {
+                    "title": "Laura Goddard Style",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/laura-goddard-style-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/5RfuH3gKIuasRV1TE_Wnew/ms.jpg",
+                    "display_phone": "+1-770-547-2444"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.363075,33.754326]
+                },
+                "properties": {
+                    "title": "Cameo Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/cameo-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/NmndBSzdnLulO-nmtKBo6w/ms.jpg",
+                    "display_phone": "+1-404-808-4974"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3548583984375,33.7830352783203]
+                },
+                "properties": {
+                    "title": "Urban Evolution Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/urban-evolution-salon-atlanta-3?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/vTgxnDUV_lB4T5mBi6qPxw/ms.jpg",
+                    "display_phone": "+1-404-577-7771"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3576929756823,33.7407240185154]
+                },
+                "properties": {
+                    "title": "Relish Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/relish-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/18b8eSI0QVpF84KWfY9Rpw/ms.jpg",
+                    "display_phone": "+1-404-248-1009"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3678467,33.7797564]
+                },
+                "properties": {
+                    "title": "Axiom Cutler Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/axiom-cutler-salon-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/KpLHDhTea8ponaVCuCouKg/ms.jpg",
+                    "display_phone": "+1-404-876-0080"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3330124,33.7645123]
+                },
+                "properties": {
+                    "title": "Sweetgrass Too",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5.0,
+                    "mobile_url": "http://m.yelp.com/biz/sweetgrass-too-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/I5P0Drrfc5g8mamO6jl7-g/ms.jpg",
+                    "display_phone": "+1-404-377-7077"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.35356668627,33.773441350118]
+                },
+                "properties": {
+                    "title": "Shear Love",
+                    "marker-symbol": "hairdresser",
+                    "rating": 4.5,
+                    "mobile_url": "http://m.yelp.com/biz/shear-love-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/gW7ONfgHPs4jYXAutwiI6A/ms.jpg",
+                    "display_phone": "+1-404-885-1133"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3588356969589,33.7637374981823]
+                },
+                "properties": {
+                    "title": "Melrose and McQueen Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 4.5,
+                    "mobile_url": "http://m.yelp.com/biz/melrose-and-mcqueen-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/nQoplKmg-Q0uZy3nfBhV7A/ms.jpg",
+                    "display_phone": "+1-404-909-5245"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3144073,33.7645798]
+                },
+                "properties": {
+                    "title": "BB Salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5,
+                    "mobile_url": "http://m.yelp.com/biz/bb-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/r_yjnQPR_xp0xWySDXsHKA/ms.jpg",
+                    "display_phone": "+1-678-705-1605"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3668844066519,33.8207915762937]
+                },
+                "properties": {
+                    "title": "Steve Hightower Hair Salon & Day Spa",
+                    "marker-symbol": "hairdresser",
+                    "rating": 4.5,
+                    "mobile_url": "http://m.yelp.com/biz/steve-hightower-hair-salon-and-day-spa-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BRduF0NM6yhke0jpOLkG5w/ms.jpg",
+                    "display_phone": "+1-404-264-9006"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.3662748,33.7562007]
+                },
+                "properties": {
+                    "title": "union16 salon",
+                    "marker-symbol": "hairdresser",
+                    "rating": 5,
+                    "mobile_url": "http://m.yelp.com/biz/union16-salon-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/u87oxVXEcGwLDxxespTKmQ/ms.jpg",
+                    "display_phone": "+1-404-221-0440"
+                }
+                },
+                {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-84.35597,33.787]
+                },
+                "properties": {
+                    "title": "Helmet Hairworx - Virginia Highlands",
+                    "marker-symbol": "hairdresser",
+                    "rating": 4.5,
+                    "mobile_url": "http://m.yelp.com/biz/helmet-hairworx-virginia-highlands-atlanta-3?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+                    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/E3kE64WyN6HV1JL2BkpjnA/ms.jpg",
+                    "display_phone": "+1-404-249-9133"
+                }
+                },
+            ]
+        }
+    });
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-15",
+            // "icon-color": "#3BB2D0"
+            // "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        },
+    });
+});
+
+
+
 </script>
 
 
