@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-//var User = require('../models/user');
-//var Styles = require('../models/style');
 var passport = require('passport');
 
 /* GET home page. */

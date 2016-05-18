@@ -20,13 +20,13 @@ a {
   padding-right: 0px;
 }
 
-.container-fluid .jumbotron {
-  border-radius: 0px;
-}
-
 .navbar-default {
   background-color: #222222;
   border-radius: 0px;
+  margin-bottom: 0px;
+  border: none;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -46,7 +46,7 @@ a {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #85CD00;
+  background-color: #FFFFFF;
   color: #000000;
 }
 
@@ -71,15 +71,13 @@ h2 {
   color: #FFFFFF;
 }
 
-.navebar-default {
-  position: fixed;
-}
-
 .btn-primary {
   background-color: #222222;
   color: white;
   border: none;
   border-radius: 10px;
+  margin-top: 60px;
+  margin-left: 7px;
 }
 
 .btn-primary:hover {
@@ -87,9 +85,20 @@ h2 {
   color: #FFFFFF;
 }
 
+.btn-success {
+  background-color: #222222;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
 footer {
   width: 100%;
-  height: 30px;
+  height: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -100,7 +109,7 @@ footer {
 }
 /*MAP*/
 canvas{
-  margin-bottom: 60px
+  margin-bottom: 0px;
 }
 #geocoder-container {
     position: relative;
@@ -118,10 +127,12 @@ canvas{
   bottom: 0px;
   left: 0px;
   width: 100%;
+  margin-bottom: 175px;
 }
 .directions-control.directions-control-directions{
   position: fixed;
 }
+
 .mapbox-directions-route-summary{
 
 }
@@ -159,3 +170,16 @@ canvas{
   }
 }
 
+.mapboxgl-ctrl-geocoder {
+  margin-left: 11px;
+  margin-top: 20px;
+}
+
+.mapboxgl-canvas {
+  margin-top: 0px;
+  height: 300px;
+}
+
+.mapboxgl-map {
+  margin-top: 50px;
+}

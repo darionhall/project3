@@ -18,7 +18,7 @@ var StyleSchema = new mongoose.Schema({
   haircutRating: Number,
   salonName: String,
   salonLocation: [addressSubschema],
-  // user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
+  //user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
 }, { timestamps: true });  // createdAt, updatedAt
 
 function date2String(date) {
