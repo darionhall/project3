@@ -13,25 +13,6 @@ var $ = require('jQuery');
 //sendgrid
 var sendgrid  = require('sendgrid')('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');
 
-    // var payload   = {
-    //   to      : 'darionhall@gmail.com',
-    //   from    : 'darionhall2@gmail.com',
-    //   subject : 'Subject',
-    //   text    : 'Can you style this?'
-    // };
-
-    // var success = false;
-    // var error;
-    // sendgrid.send(new sendgrid.Email(payload), function(err, json) {
-    //   if (err) {
-    //     console.error(err);
-    //     // error = err;
-    //   }
-    //   else{
-    //     success = true;
-    //   }
-    // });
-
 
 //passport
 var passport = require('passport');

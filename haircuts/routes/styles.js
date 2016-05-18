@@ -65,14 +65,24 @@ router.get('/:id', authenticate, function(req, res, next) {
 router.post('/send', function (req, res, next) {
     buttonAction1(res);
     var payload   = {
-      to      : 'darionhall@gmail.com',
-      from    : 'darionhall2@gmail.com',
-      subject : 'Subject',
-      text    : 'Can you style this?'
+      to      : 'darionhall2@gmail.com',
+      from    : 'req.currentUser.email',
+      subject : 'Style',
+      text    : ['req.body.type+req.body.duration+req.body.cost']
     };
 
+
+// to      : req.body.email,
+// from    : req.user.email,
+// user.email
+// user.find
+// darionhall@gmail.com
+// darionhall2@gmail.com
+// files   : [{Style.findById(req.params.id)}]
+
+
     var success = false;
-    var error;
+    // var error;
     sendgrid.send(new sendgrid.Email(payload), function(err, json) {
       if (err) {
         console.error(err);
@@ -83,9 +93,10 @@ router.post('/send', function (req, res, next) {
       }
     });
 
-    res.render('styles/show', { style: style} );
+    res.redirect('/styles', { style: style} );
 
 });
+
 
 // CREATE
 router.post('/', authenticate, function(req, res, next) {
