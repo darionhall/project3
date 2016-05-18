@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 //var User = require('../models/user');
 var Style = require('../models/style');
-
-
+//sendgrid (email)
+var sendgrid  = require('sendgrid')('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');
 
 
 function makeError(res, message, status) {
@@ -21,6 +21,11 @@ function makeError(res, message, status) {
     next();
   }
 }
+
+function buttonAction1(res){
+  res.send('ok');
+}
+
 
 // INDEX
 router.get('/', authenticate, function(req, res, next) {
@@ -53,15 +58,34 @@ router.get('/:id', authenticate, function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/show', { style: style} );
-
-  function buttonAction1(res){
-    res.send('ok');
-  }
-  router.get("/test1", function (req, res) {
-      buttonAction1(res);
-  });
 });
 
+
+// EMAIL
+router.post('/send', function (req, res, next) {
+    buttonAction1(res);
+    var payload   = {
+      to      : 'darionhall@gmail.com',
+      from    : 'darionhall2@gmail.com',
+      subject : 'Subject',
+      text    : 'Can you style this?'
+    };
+
+    var success = false;
+    var error;
+    sendgrid.send(new sendgrid.Email(payload), function(err, json) {
+      if (err) {
+        console.error(err);
+        // error = err;
+      }
+      else{
+        success = true;
+      }
+    });
+
+    res.render('styles/show', { style: email} );
+
+});
 
 // CREATE
 router.post('/', authenticate, function(req, res, next) {

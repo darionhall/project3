@@ -27,20 +27,9 @@
       <p><b>Comments</b><%= style.comments %></p>
     </div> -->
 
-    <form class="style-form" action="/styles/" method="post">
-      <% include _email_form %>
+      <% include ../partials/email_form %>
 
-      <button id='button1'> Email </button>
-    </form>
-
-    <script>
-      $('#button1').click(function(){
-          console.log('button clicked');
-          $.ajax({url: '/styles', success:function(res){
-              console.log('server response is', res);
-          }});
-      });
-    </script><br />
+    <br />
 
 
     <br /><a href="/styles" class="btn btn-primary">Back</a>

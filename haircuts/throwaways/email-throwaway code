@@ -1,6 +1,6 @@
 // vh78oAO3RcOtQVq1X9I6DQ
 
-var sendgrid  = require('sendgrid')('SG.vh78oAO3RcOtQVq1X9I6DQ.0E_nNXF3eXWGr3FwBdTkpbEFd');
+var sendgrid  = require('sendgrid')('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');
 
 var payload   = {
   to      : 'darionhall@gmail.com',
@@ -9,12 +9,45 @@ var payload   = {
   text    : 'This is my first email through SendGrid'
 }
 
+
 sendgrid.send(payload, function(err, json) {
   if (err) { console.error(err); }
   console.log(json);
 });
 
 
+*html:
+
+<button id='button1'> Test </button>
+
+
+*js(client):
+
+$('#button1').click(function(){
+    console.log('button clicked');
+    $.ajax({url: 'test1', success:function(res){
+        console.log('server response is', res);
+    }});
+});
+
+<script type="text/javascript">
+    $('#button1').click(function(){
+        console.log('button clicked');
+        var body = $('#emailForm').serialize();
+        console.log(body);
+        $.post('/styles/send', body, function(res){
+            console.log('server response is', res);
+        });
+    });
+
+*js(server):
+
+function buttonAction1(res){
+    res.send('ok');
+}
+router.get("/styles/send", function (req, res) {
+    buttonAction1(res);
+});
 
 
 

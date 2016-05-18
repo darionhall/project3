@@ -1,0 +1,35 @@
+
+<div class="form-group">
+  <label for="email">Email</label>
+  <main>
+    <form id="emailForm" class="style-form">
+      <input type="hidden" name="id" value="<%= style._id %>"/>
+      <input type="text"
+      class="form-control"
+      name="email"
+      value="darionhall@gmail.com"/>
+      <% include ../styles/_form %>
+    </form>
+
+      <button id='button1'> Email </button>
+  </main>
+
+</div>
+
+<script type="text/javascript">
+    $('#button1').click(function(){
+        console.log('button clicked');
+        var body = $('#emailForm').serialize();
+        console.log(body);
+        $.post('/styles/send', body, function(res){
+            console.log('server response is', res);
+        });
+    });
+</script>
+
+
+
+
+
+
+
