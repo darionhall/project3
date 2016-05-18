@@ -12,7 +12,7 @@
 
   <main>
     <div>
-      <h3>styles: <a href="/styles/new" class="btn btn-primary">New</a></h3>
+      <h3><a href="/styles/new" class="btn btn-primary">Add New Style</a></h3>
       <% styles.forEach(function(style) { %>
         <h4>
           <form method="POST" action="/styles/<%= style._id %>?_method=DELETE" class="stylebox">

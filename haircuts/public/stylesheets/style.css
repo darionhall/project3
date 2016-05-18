@@ -18,13 +18,13 @@ a {
   padding-right: 0px;
 }
 
-.container-fluid .jumbotron {
-  border-radius: 0px;
-}
-
 .navbar-default {
   background-color: #222222;
   border-radius: 0px;
+  margin-bottom: 0px;
+  border: none;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -44,7 +44,7 @@ a {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #85CD00;
+  background-color: #3BB2D0;
   color: #000000;
 }
 
@@ -66,28 +66,39 @@ h2 {
 
 .btn-danger:hover {
   background-color: #222222;
-  color: #FFFFFF;
+  color: #3BB2D0;
 }
 
-.navebar-default {
-  position: fixed;
+h3 {
+  margin-top: 70px;
 }
 
 .btn-primary {
   background-color: #222222;
   color: white;
   border: none;
-  border-radius: 10px;
+  margin-left: 7px;
 }
 
 .btn-primary:hover {
+  background-color: #3BB2D0;
+  color: #000000;
+}
+
+.btn-success {
   background-color: #222222;
-  color: #FFFFFF;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #3BB2D0;
+  color: #000000;
 }
 
 footer {
   width: 100%;
-  height: 30px;
+  height: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -103,7 +114,7 @@ footer {
   width:33.3333%;
   }
 canvas{
-  margin-bottom: 60px
+  margin-bottom: 0px;
 }
 #geocoder-container {
     position: relative;
@@ -121,11 +132,17 @@ canvas{
   bottom: 0px;
   left: 0px;
   width: 100%;
+  margin-bottom: 175px;
 }
 
 .directions-control.directions-control-directions{
   position: fixed;
 }
+<<<<<<< HEAD
+=======
+
+.mapbox-directions-route-summary{
+>>>>>>> moreCSS
 
 #directions-control{
   bottom: 150px;
@@ -161,3 +178,21 @@ canvas{
   }
 }
 
+.mapboxgl-ctrl-geocoder {
+  margin-left: 11px;
+  margin-top: 20px;
+}
+
+.mapboxgl-canvas {
+  margin-top: 0px;
+  height: 300px;
+}
+
+.mapboxgl-map {
+  margin-top: 50px;
+}
+
+.showuser {
+  margin-top: 70px;
+  margin-left: 400px;
+}

@@ -2,12 +2,6 @@ var mongoose = require('mongoose');
 var bcrypt = require('bcrypt-nodejs');
 var Style = require('./style');
 
-// img path
-//var imgPath = '/path/to/some/img.png';
-
-var mongoose = require('mongoose');
-var bcrypt   = require('bcrypt-nodejs');
-var User = require('./user');
 
 var User = new mongoose.Schema({
   local : {
