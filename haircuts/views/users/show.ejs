@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="/stylesheets/edit.css">
   <% include ../partials/head %>
 </head>
 
@@ -11,15 +12,15 @@
 
   <main>
     <div>
-      <h3><%= user.currentUser_id %></h3>
 
-      <p><b>Email</b><%= user.email %></p>
+
+      <h1 class="showuser"><b>Email: </b><%= currentUser.local.email %></h1>
 
     </div>
 
 
-    <a href="/users" class="btn btn-primary">Back</a>
-    <a href="/users/<%= currentUser._id %>/edit" class="btn btn-danger">Edit</a>
+    <!--<a href="/users" class="btn btn-primary">Back</a>
+    <a href="/users/<%= currentUser._id %>/edit" class="btn btn-danger">Edit</a>-->
 
   </main>
 
