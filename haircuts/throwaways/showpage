@@ -28,3 +28,9 @@ router.post('/send', function (req, res, next) {
     res.render('styles/show', { style: style} );
 
 });
+
+
+email_form.ejs
+footer
+head
+header
