@@ -107,12 +107,7 @@ footer {
   text-align: center;
   color: grey;
 }
-
 /*MAP*/
-
-.sidebar {
-  width:33.3333%;
-  }
 canvas{
   margin-bottom: 0px;
 }
@@ -134,26 +129,21 @@ canvas{
   width: 100%;
   margin-bottom: 175px;
 }
-
 .directions-control.directions-control-directions{
   position: fixed;
 }
-<<<<<<< HEAD
-=======
-
-.mapbox-directions-route-summary{
->>>>>>> moreCSS
 
 #directions-control{
   bottom: 150px;
   margin-top: 0px;
   padding-top: 75px;
-
 }
+
 #geocoder-container > div {
     min-width:50%;
     margin-right:10%;
 }
+
 #map{
   position:relative;
   min-height: 300px;
@@ -169,6 +159,7 @@ canvas{
   font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 11px;
 }
+
 
 /* For non touch devices, move control out of the way at small window widths */
 @media (max-width: 100%) {
