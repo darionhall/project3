@@ -83,7 +83,7 @@ router.post('/send', function (req, res, next) {
       }
     });
 
-    res.render('styles/show', { style: email} );
+    res.render('styles/show', { style: style} );
 
 });
 
