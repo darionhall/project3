@@ -1,494 +1,508 @@
-{
-    "region": {
-        "span": {
-            "latitude_delta": 0.07752525000000787,
-            "longitude_delta": 0.0741555099999971
-        },
-        "center": {
-            "latitude": 33.77312445,
-            "longitude": -84.38648785000001
-        }
-    },
-    "total": 40,
-    "businesses": [
-        {
-            "is_claimed": true,
-            "rating": 4.5,
-            "mobile_url": "http://m.yelp.com/biz/off-the-hook-barber-shop-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-            "review_count": 6,
-            "name": "Off the Hook Barber Shop",
-            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Sir95q431xTWFjRltZi_qQ/ms.jpg",
-            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
-            "url": "http://www.yelp.com/biz/off-the-hook-barber-shop-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "251 Peters St SW",
-                    "Castleberry Hill",
-                    "Atlanta, GA 30313"
-                ],
-                "geo_accuracy": 8.0,
-                "neighborhoods": [
-                    "Castleberry Hill"
-                ],
-                "postal_code": "30313",
-                "country_code": "US",
-                "address": [
-                    "251 Peters St SW"
-                ],
-                "coordinate": {
-                    "latitude": 33.7478221,
-                    "longitude": -84.4014843
-                },
-                "state_code": "GA"
-            },
-            "phone": "4045894625",
-            "snippet_text": "There is a woman there who did my weave and no one has ever touched her work since. when I met her she was very friendly pleasant and was great with my...",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NkCNq_e37oMmsiVP6Kp3Ug/ms.jpg",
-            "categories": [
-                [
-                    "Barbers",
-                    "barbers"
-                ]
-            ],
-            "display_phone": "+1-404-589-4625",
-            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
-            "id": "off-the-hook-barber-shop-atlanta-2",
-            "is_closed": false,
-            "distance": 1033.9186889540586
-        },
-        {
-            "is_claimed": true,
-            "rating": 5.0,
-            "mobile_url": "http://m.yelp.com/biz/club-kiss-salon-and-spa-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-            "review_count": 5,
-            "name": "Club Kiss Salon & Spa",
-            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/v1VRhGPiw7AAgbXVKw4-FA/ms.jpg",
-            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
-            "url": "http://www.yelp.com/biz/club-kiss-salon-and-spa-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "264 Peters St",
-                    "Castleberry Hill",
-                    "Atlanta, GA 30313"
-                ],
-                "geo_accuracy": 8.0,
-                "neighborhoods": [
-                    "Castleberry Hill"
-                ],
-                "postal_code": "30313",
-                "country_code": "US",
-                "address": [
-                    "264 Peters St"
-                ],
-                "coordinate": {
-                    "latitude": 33.7472381591797,
-                    "longitude": -84.4014205932617
-                },
-                "state_code": "GA"
-            },
-            "menu_date_updated": 1442105391,
-            "phone": "4043434606",
-            "snippet_text": "I loved my experience and Club Kiss. When I walked in I was greated with a smile by Celica at the front desk. I had a wonderful experience with nail tech...",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PzSpcRJHmtEVTYFbQdVGGg/ms.jpg",
-            "categories": [
-                [
-                    "Hair Extensions",
-                    "hair_extensions"
-                ],
-                [
-                    "Day Spas",
-                    "spas"
-                ]
-            ],
-            "display_phone": "+1-404-343-4606",
-            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
-            "menu_provider": "single_platform",
-            "id": "club-kiss-salon-and-spa-atlanta-2",
-            "is_closed": false,
-            "distance": 1060.9375528079236
-        },
-        {
-            "rating": 4.5,
-            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-            "display_phone": "+1-404-752-8868",
-            "gift_certificates": [
-                {
-                    "url": "http://www.yelp.com/gift-certificates/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-                    "unused_balances": "CREDIT",
-                    "options": [
-                        {
-                            "price": 1000,
-                            "formatted_price": "$10"
-                        },
-                        {
-                            "price": 2500,
-                            "formatted_price": "$25"
-                        },
-                        {
-                            "price": 5000,
-                            "formatted_price": "$50"
-                        },
-                        {
-                            "price": 7500,
-                            "formatted_price": "$75"
-                        },
-                        {
-                            "price": 10000,
-                            "formatted_price": "$100"
-                        },
-                        {
-                            "price": 15000,
-                            "formatted_price": "$150"
-                        }
-                    ],
-                    "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/S6EJuyYYCrQBuGqyXgGm1A/m.jpg",
-                    "id": "MmSZGhIgxl2nLRAUxR49fA",
-                    "currency_code": "USD"
-                }
-            ],
-            "id": "salon-artesia-atlanta",
-            "is_closed": false,
-            "mobile_url": "http://m.yelp.com/biz/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "review_count": 10,
-            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/M5gfqZPy9wWpjzoRQ_V2cw/ms.jpg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "990 Ralph David Abernathy Blvd",
-                    "West End",
-                    "Atlanta, GA 30310"
-                ],
-                "geo_accuracy": 8.0,
-                "neighborhoods": [
-                    "West End"
-                ],
-                "postal_code": "30310",
-                "country_code": "US",
-                "address": [
-                    "990 Ralph David Abernathy Blvd"
-                ],
-                "coordinate": {
-                    "latitude": 33.7378464,
-                    "longitude": -84.4201584
-                },
-                "state_code": "GA"
-            },
-            "is_claimed": true,
-            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
-            "phone": "4047528868",
-            "snippet_text": "Ive been coming here for four years and I feel right at home when I walk through the door. It's always good conversation, laughs and good vibes. Everyone is...",
-            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
-            "categories": [
-                [
-                    "Hair Extensions",
-                    "hair_extensions"
-                ]
-            ],
-            "distance": 1338.0229312828455,
-            "name": "Salon Artesia",
-            "url": "http://www.yelp.com/biz/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "deals": [
-                {
-                    "what_you_get": "You get a voucher redeemable for $70 at Salon Artesia.\nPrint out your voucher, or redeem on your phone with the <a href=\"http://www.yelp.com/mobile?source=deal_marketing\">Yelp app</a>.",
-                    "time_start": 1365465476,
-                    "title": "$40 for $70",
-                    "url": "http://www.yelp.com/deals/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-                    "additional_restrictions": "Promotion lasts for 1 year from date of purchase. After that period, your voucher is redeemable for the amount you paid, less any value you may have received. Not valid with other vouchers, certificates, or offers. Voucher can only be used for services, not retail products. Only 1 voucher(s) can be purchased and redeemed per person. Up to 3 can be purchased as gifts for others. Subject to the <a target=\"_blank\" href=\"http://www.yelp.com/tos/general_b2c_us_20120911\">General Terms</a>.",
-                    "options": [
-                        {
-                            "original_price": 7000,
-                            "title": "$40 for $70",
-                            "price": 4000,
-                            "purchase_url": "https://www.yelp.com/checkout/deal/spVSRjnuZLi3wTsFtMG3uw?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-                            "formatted_original_price": "$70",
-                            "formatted_price": "$40",
-                            "is_quantity_limited": false
-                        }
-                    ],
-                    "image_url": "https://s3-media4.fl.yelpcdn.com/dphoto/L9qMRYzspbpdZozgn7GI3g/m.jpg",
-                    "id": "yz5vZNPgRNHaffJxvZ8-Bw",
-                    "currency_code": "USD"
-                }
-            ],
-            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/M-1uBKMFUsD2Pr7377JWKg/ms.jpg",
-            "menu_provider": "single_platform",
-            "menu_date_updated": 1442115139
-        },
-        {
-            "is_claimed": false,
-            "rating": 5.0,
-            "mobile_url": "http://m.yelp.com/biz/vintage-hair-gallery-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-            "review_count": 13,
-            "name": "Vintage Hair Gallery",
-            "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/WHAKxOKU_XSCjXZWibFpmg/ms.jpg",
-            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
-            "url": "http://www.yelp.com/biz/vintage-hair-gallery-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "57 Forsyth St NW",
-                    "Downtown",
-                    "Atlanta, GA 30303"
-                ],
-                "geo_accuracy": 8.0,
-                "neighborhoods": [
-                    "Downtown"
-                ],
-                "postal_code": "30303",
-                "country_code": "US",
-                "address": [
-                    "57 Forsyth St NW"
-                ],
-                "coordinate": {
-                    "latitude": 33.7558999,
-                    "longitude": -84.38991
-                },
-                "state_code": "GA"
-            },
-            "phone": "4048083335",
-            "snippet_text": "Decided to try out a new barbershop and I have found my new spot! Good barbershop environment with everyone showing a particular attention to detail and a...",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/t0ilmUyg-EGtSLOejK14fg/ms.jpg",
-            "categories": [
-                [
-                    "Barbers",
-                    "barbers"
-                ]
-            ],
-            "display_phone": "+1-404-808-3335",
-            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
-            "id": "vintage-hair-gallery-atlanta",
-            "is_closed": false,
-            "distance": 2297.3312258174137
-        },
-        {
-            "is_claimed": true,
-            "rating": 4.5,
-            "mobile_url": "http://m.yelp.com/biz/master-groom-barber-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-            "review_count": 16,
-            "name": "Master Groom Barber Salon",
-            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/ZNILM6TLPM0dm3M5B5C7lA/ms.jpg",
-            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
-            "url": "http://www.yelp.com/biz/master-groom-barber-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "349 Decatur St",
-                    "Ste B",
-                    "Atlanta, GA 30312"
-                ],
-                "geo_accuracy": 8.0,
-                "postal_code": "30312",
-                "country_code": "US",
-                "address": [
-                    "349 Decatur St",
-                    "Ste B"
-                ],
-                "coordinate": {
-                    "latitude": 33.74955,
-                    "longitude": -84.37822
-                },
-                "state_code": "GA"
-            },
-            "phone": "4045222322",
-            "snippet_text": "I love this shop! I heard excellent reviews about the shop from friends and tried it out with the barber Bilal and had a great experience. He took his time...",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/1d5GhalzfaIt7RvUsCa4TA/ms.jpg",
-            "categories": [
-                [
-                    "Barbers",
-                    "barbers"
-                ]
-            ],
-            "display_phone": "+1-404-522-2322",
-            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
-            "id": "master-groom-barber-salon-atlanta",
-            "is_closed": false,
-            "distance": 3146.8796212422317
-        },
-        {
-            "is_claimed": true,
-            "rating": 3.5,
-            "mobile_url": "http://m.yelp.com/biz/toni-neal-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
-            "review_count": 30,
-            "name": "Toni Neal",
-            "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Dk4rSo6MxAOYkCByhQMw8A/ms.jpg",
-            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
-            "url": "http://www.yelp.com/biz/toni-neal-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "Salon Theory",
-                    "290 Martin Luther King St SE,Ste 101",
-                    "Atlanta, GA 30312"
-                ],
-                "geo_accuracy": 8.0,
-                "postal_code": "30312",
-                "country_code": "US",
-                "address": [
-                    "Salon Theory",
-                    "290 Martin Luther King St SE,Ste 101"
-                ],
-                "coordinate": {
-                    "latitude": 33.7480735778809,
-                    "longitude": -84.3788070678711
-                },
-                "state_code": "GA"
-            },
-            "phone": "4048560254",
-            "snippet_text": "Do your tresses need attention?....Salon  Theory 's the joint!  Toni is a dynamic stylist and personality. ...Keesi and Angela ensured my welcome and...",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BgcvDE-HAKyY1QkSfEyr2w/ms.jpg",
-            "categories": [
-                [
-                    "Hair Extensions",
-                    "hair_extensions"
-                ],
-                [
-                    "Cosmetics & Beauty Supply",
-                    "cosmetics"
-                ],
-                [
-                    "Hair Stylists",
-                    "hairstylists"
-                ]
-            ],
-            "display_phone": "+1-404-856-0254",
-            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
-            "id": "toni-neal-atlanta-2",
-            "is_closed": false,
-            "distance": 3150.140025226564
-        },
-        {
-            "is_claimed": false,
-            "rating": 5.0,
-            "mobile_url": "http://m.yelp.com/biz/spoiled-opulence-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-            "review_count": 4,
-            "name": "Spoiled Opulence Salon",
-            "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/E5JZuHmqv0fLVraCkURJrA/ms.jpg",
-            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
-            "url": "http://www.yelp.com/biz/spoiled-opulence-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "948 Marietta St NW",
-                    "Ste 3",
-                    "Atlanta, GA 30318"
-                ],
-                "geo_accuracy": 9.5,
-                "postal_code": "30318",
-                "country_code": "US",
-                "address": [
-                    "948 Marietta St NW",
-                    "Ste 3"
-                ],
-                "coordinate": {
-                    "latitude": 33.778398,
-                    "longitude": -84.409119
-                },
-                "state_code": "GA"
-            },
-            "menu_date_updated": 1442017891,
-            "phone": "4047330555",
-            "snippet_text": "I get my hair done here by Al. Al does an absolute amazing job and it's worth every penny. Every time I leave the salon I feel like a supermodel and...",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VsqZlYZDDizQldI3RE-Usg/ms.jpg",
-            "categories": [
-                [
-                    "Hair Extensions",
-                    "hair_extensions"
-                ],
-                [
-                    "Hair Stylists",
-                    "hairstylists"
-                ]
-            ],
-            "display_phone": "+1-404-733-0555",
-            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
-            "menu_provider": "single_platform",
-            "id": "spoiled-opulence-salon-atlanta",
-            "is_closed": false,
-            "distance": 3370.414533568369
-        },
-        {
-            "is_claimed": true,
-            "rating": 4.0,
-            "mobile_url": "http://m.yelp.com/biz/monique-kincade-atlanta-6?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-            "review_count": 4,
-            "name": "Monique Kincade",
-            "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/sSjL1Z4_DofDtf2q7CbV8g/ms.jpg",
-            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-            "url": "http://www.yelp.com/biz/monique-kincade-atlanta-6?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-            "location": {
-                "city": "Atlanta",
-                "display_address": [
-                    "670 10th St NW",
-                    "Westside / Home Park",
-                    "Atlanta, GA 30318"
-                ],
-                "geo_accuracy": 9.5,
-                "neighborhoods": [
-                    "Westside / Home Park"
-                ],
-                "postal_code": "30318",
-                "country_code": "US",
-                "address": [
-                    "670 10th St NW"
-                ],
-                "coordinate": {
-                    "latitude": 33.7813307,
-                    "longitude": -84.4093168
-                },
-                "state_code": "GA"
-            },
-            "deals": [
-                {
-                    "what_you_get": "You get a voucher redeemable for $75 at Monique Kincade.\nPrint out your voucher, or redeem on your phone with the <a href=\"http://www.yelp.com/mobile?source=deal_marketing\">Yelp app</a>.",
-                    "time_start": 1386305318,
-                    "title": "$50 for $75",
-                    "url": "http://www.yelp.com/deals/monique-kincade-hair-studio-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-                    "additional_restrictions": "Promotion lasts for 1 year from date of purchase. After that period, your voucher is redeemable for the amount you paid, less any value you may have received. Not valid with other vouchers, certificates, or offers. Voucher can only be used for services, not retail products. Only 1 voucher(s) can be purchased and redeemed per person. Up to 3 can be purchased as gifts for others. Subject to the <a target=\"_blank\" href=\"http://www.yelp.com/tos/general_b2c_us_20120911\">General Terms</a>.",
-                    "options": [
-                        {
-                            "original_price": 7500,
-                            "title": "$50 for $75",
-                            "price": 5000,
-                            "purchase_url": "https://www.yelp.com/checkout/deal/us0-GXhQzuMv9uLzOEXxpw?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
-                            "remaining_count": 50,
-                            "formatted_original_price": "$75",
-                            "formatted_price": "$50",
-                            "is_quantity_limited": true
-                        }
-                    ],
-                    "image_url": "https://s3-media1.fl.yelpcdn.com/dphoto/UQdC3Wn7YlPvmO5NtZCZwg/m.jpg",
-                    "id": "uC4fDQMUjH4ba0Cdq4eMlw",
-                    "currency_code": "USD"
-                }
-            ],
-            "phone": "4045007583",
-            "snippet_text": "Monique is a great hair Stylest!! \nI did keratin and it is made my hair looking fab.\nThank you !!",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9pyFCYCzsby0_zAqIpLOeg/ms.jpg",
-            "categories": [
-                [
-                    "Hair Extensions",
-                    "hair_extensions"
-                ],
-                [
-                    "Hair Stylists",
-                    "hairstylists"
-                ]
-            ],
-            "display_phone": "+1-404-500-7583",
-            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
-            "id": "monique-kincade-atlanta-6",
-            "is_closed": false,
-            "distance": 3693.3158978045817
-        },
+// {
+//     "region": {
+//         "span": {
+//             "latitude_delta": 0.07752525000000787,
+//             "longitude_delta": 0.0741555099999971
+//         },
+//         "center": {
+//             "latitude": 33.77312445,
+//             "longitude": -84.38648785000001
+//         }
+//     },
+//     "total": 40,
+//     "businesses": [
+
+
+//         {
+//             "is_claimed": true,
+//             "rating": 4.5,
+//             "mobile_url": "http://m.yelp.com/biz/off-the-hook-barber-shop-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+//             "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+//             "review_count": 6,
+//             "name": "Off the Hook Barber Shop",
+//             "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Sir95q431xTWFjRltZi_qQ/ms.jpg",
+//             "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+//             "url": "http://www.yelp.com/biz/off-the-hook-barber-shop-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+//             "location": {
+//                 "city": "Atlanta",
+//                 "display_address": [
+//                     "251 Peters St SW",
+//                     "Castleberry Hill",
+//                     "Atlanta, GA 30313"
+//                 ],
+//                 "geo_accuracy": 8.0,
+//                 "neighborhoods": [
+//                     "Castleberry Hill"
+//                 ],
+//                 "postal_code": "30313",
+//                 "country_code": "US",
+//                 "address": [
+//                     "251 Peters St SW"
+//                 ],
+//                 "coordinate": {
+//                     "latitude": 33.7478221,
+//                     "longitude": -84.4014843
+//                 },
+//                 "state_code": "GA"
+//             },
+//             "phone": "4045894625",
+//             "snippet_text": "There is a woman there who did my weave and no one has ever touched her work since. when I met her she was very friendly pleasant and was great with my...",
+//             "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NkCNq_e37oMmsiVP6Kp3Ug/ms.jpg",
+//             "categories": [
+//                 [
+//                     "Barbers",
+//                     "barbers"
+//                 ]
+//             ],
+//             "display_phone": "+1-404-589-4625",
+//             "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+//             "id": "off-the-hook-barber-shop-atlanta-2",
+//             "is_closed": false,
+//             "distance": 1033.9186889540586
+//         },
+
+
+        // {
+        //     "is_claimed": true,
+        //     "rating": 5.0,
+        //     "mobile_url": "http://m.yelp.com/biz/club-kiss-salon-and-spa-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        //     "review_count": 5,
+        //     "name": "Club Kiss Salon & Spa",
+        //     "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/v1VRhGPiw7AAgbXVKw4-FA/ms.jpg",
+        //     "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        //     "url": "http://www.yelp.com/biz/club-kiss-salon-and-spa-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "264 Peters St",
+        //             "Castleberry Hill",
+        //             "Atlanta, GA 30313"
+        //         ],
+        //         "geo_accuracy": 8.0,
+        //         "neighborhoods": [
+        //             "Castleberry Hill"
+        //         ],
+        //         "postal_code": "30313",
+        //         "country_code": "US",
+        //         "address": [
+        //             "264 Peters St"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.7472381591797,
+        //             "longitude": -84.4014205932617
+        //         },
+        //         "state_code": "GA"
+        //     },
+        //     "menu_date_updated": 1442105391,
+        //     "phone": "4043434606",
+        //     "snippet_text": "I loved my experience and Club Kiss. When I walked in I was greated with a smile by Celica at the front desk. I had a wonderful experience with nail tech...",
+        //     "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PzSpcRJHmtEVTYFbQdVGGg/ms.jpg",
+        //     "categories": [
+        //         [
+        //             "Hair Extensions",
+        //             "hair_extensions"
+        //         ],
+        //         [
+        //             "Day Spas",
+        //             "spas"
+        //         ]
+        //     ],
+        //     "display_phone": "+1-404-343-4606",
+        //     "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        //     "menu_provider": "single_platform",
+        //     "id": "club-kiss-salon-and-spa-atlanta-2",
+        //     "is_closed": false,
+        //     "distance": 1060.9375528079236
+        // },
+        // {
+        //     "rating": 4.5,
+        //     "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        //     "display_phone": "+1-404-752-8868",
+        //     "gift_certificates": [
+        //         {
+        //             "url": "http://www.yelp.com/gift-certificates/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //             "unused_balances": "CREDIT",
+        //             "options": [
+        //                 {
+        //                     "price": 1000,
+        //                     "formatted_price": "$10"
+        //                 },
+        //                 {
+        //                     "price": 2500,
+        //                     "formatted_price": "$25"
+        //                 },
+        //                 {
+        //                     "price": 5000,
+        //                     "formatted_price": "$50"
+        //                 },
+        //                 {
+        //                     "price": 7500,
+        //                     "formatted_price": "$75"
+        //                 },
+        //                 {
+        //                     "price": 10000,
+        //                     "formatted_price": "$100"
+        //                 },
+        //                 {
+        //                     "price": 15000,
+        //                     "formatted_price": "$150"
+        //                 }
+        //             ],
+        //             "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/S6EJuyYYCrQBuGqyXgGm1A/m.jpg",
+        //             "id": "MmSZGhIgxl2nLRAUxR49fA",
+        //             "currency_code": "USD"
+        //         }
+        //     ],
+        //     "id": "salon-artesia-atlanta",
+        //     "is_closed": false,
+        //     "mobile_url": "http://m.yelp.com/biz/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "review_count": 10,
+        //     "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/M5gfqZPy9wWpjzoRQ_V2cw/ms.jpg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "990 Ralph David Abernathy Blvd",
+        //             "West End",
+        //             "Atlanta, GA 30310"
+        //         ],
+        //         "geo_accuracy": 8.0,
+        //         "neighborhoods": [
+        //             "West End"
+        //         ],
+        //         "postal_code": "30310",
+        //         "country_code": "US",
+        //         "address": [
+        //             "990 Ralph David Abernathy Blvd"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.7378464,
+        //             "longitude": -84.4201584
+        //         },
+        //         "state_code": "GA"
+        //     },
+
+
+        //     "is_claimed": true,
+        //     "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        //     "phone": "4047528868",
+        //     "snippet_text": "Ive been coming here for four years and I feel right at home when I walk through the door. It's always good conversation, laughs and good vibes. Everyone is...",
+        //     "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        //     "categories": [
+        //         [
+        //             "Hair Extensions",
+        //             "hair_extensions"
+        //         ]
+        //     ],
+        //     "distance": 1338.0229312828455,
+        //     "name": "Salon Artesia",
+        //     "url": "http://www.yelp.com/biz/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "deals": [
+        //         {
+        //             "what_you_get": "You get a voucher redeemable for $70 at Salon Artesia.\nPrint out your voucher, or redeem on your phone with the <a href=\"http://www.yelp.com/mobile?source=deal_marketing\">Yelp app</a>.",
+        //             "time_start": 1365465476,
+        //             "title": "$40 for $70",
+        //             "url": "http://www.yelp.com/deals/salon-artesia-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //             "additional_restrictions": "Promotion lasts for 1 year from date of purchase. After that period, your voucher is redeemable for the amount you paid, less any value you may have received. Not valid with other vouchers, certificates, or offers. Voucher can only be used for services, not retail products. Only 1 voucher(s) can be purchased and redeemed per person. Up to 3 can be purchased as gifts for others. Subject to the <a target=\"_blank\" href=\"http://www.yelp.com/tos/general_b2c_us_20120911\">General Terms</a>.",
+        //             "options": [
+        //                 {
+        //                     "original_price": 7000,
+        //                     "title": "$40 for $70",
+        //                     "price": 4000,
+        //                     "purchase_url": "https://www.yelp.com/checkout/deal/spVSRjnuZLi3wTsFtMG3uw?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //                     "formatted_original_price": "$70",
+        //                     "formatted_price": "$40",
+        //                     "is_quantity_limited": false
+        //                 }
+        //             ],
+        //             "image_url": "https://s3-media4.fl.yelpcdn.com/dphoto/L9qMRYzspbpdZozgn7GI3g/m.jpg",
+        //             "id": "yz5vZNPgRNHaffJxvZ8-Bw",
+        //             "currency_code": "USD"
+        //         }
+        //     ],
+        //     "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/M-1uBKMFUsD2Pr7377JWKg/ms.jpg",
+        //     "menu_provider": "single_platform",
+        //     "menu_date_updated": 1442115139
+        // },
+        // {
+        //     "is_claimed": false,
+        //     "rating": 5.0,
+        //     "mobile_url": "http://m.yelp.com/biz/vintage-hair-gallery-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        //     "review_count": 13,
+        //     "name": "Vintage Hair Gallery",
+        //     "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/WHAKxOKU_XSCjXZWibFpmg/ms.jpg",
+        //     "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        //     "url": "http://www.yelp.com/biz/vintage-hair-gallery-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "57 Forsyth St NW",
+        //             "Downtown",
+        //             "Atlanta, GA 30303"
+        //         ],
+        //         "geo_accuracy": 8.0,
+        //         "neighborhoods": [
+        //             "Downtown"
+        //         ],
+        //         "postal_code": "30303",
+        //         "country_code": "US",
+        //         "address": [
+        //             "57 Forsyth St NW"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.7558999,
+        //             "longitude": -84.38991
+        //         },
+        //         "state_code": "GA"
+        //     },
+        //     "phone": "4048083335",
+        //     "snippet_text": "Decided to try out a new barbershop and I have found my new spot! Good barbershop environment with everyone showing a particular attention to detail and a...",
+        //     "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/t0ilmUyg-EGtSLOejK14fg/ms.jpg",
+        //     "categories": [
+        //         [
+        //             "Barbers",
+        //             "barbers"
+        //         ]
+        //     ],
+        //     "display_phone": "+1-404-808-3335",
+        //     "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        //     "id": "vintage-hair-gallery-atlanta",
+        //     "is_closed": false,
+        //     "distance": 2297.3312258174137
+        // },
+
+
+
+        // {
+        //     "is_claimed": true,
+        //     "rating": 4.5,
+        //     "mobile_url": "http://m.yelp.com/biz/master-groom-barber-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        //     "review_count": 16,
+        //     "name": "Master Groom Barber Salon",
+        //     "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/ZNILM6TLPM0dm3M5B5C7lA/ms.jpg",
+        //     "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        //     "url": "http://www.yelp.com/biz/master-groom-barber-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "349 Decatur St",
+        //             "Ste B",
+        //             "Atlanta, GA 30312"
+        //         ],
+        //         "geo_accuracy": 8.0,
+        //         "postal_code": "30312",
+        //         "country_code": "US",
+        //         "address": [
+        //             "349 Decatur St",
+        //             "Ste B"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.74955,
+        //             "longitude": -84.37822
+        //         },
+        //         "state_code": "GA"
+        //     },
+        //     "phone": "4045222322",
+        //     "snippet_text": "I love this shop! I heard excellent reviews about the shop from friends and tried it out with the barber Bilal and had a great experience. He took his time...",
+        //     "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/1d5GhalzfaIt7RvUsCa4TA/ms.jpg",
+        //     "categories": [
+        //         [
+        //             "Barbers",
+        //             "barbers"
+        //         ]
+        //     ],
+        //     "display_phone": "+1-404-522-2322",
+        //     "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+        //     "id": "master-groom-barber-salon-atlanta",
+        //     "is_closed": false,
+        //     "distance": 3146.8796212422317
+        // },
+
+
+        // {
+        //     "is_claimed": true,
+        //     "rating": 3.5,
+        //     "mobile_url": "http://m.yelp.com/biz/toni-neal-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        //     "review_count": 30,
+        //     "name": "Toni Neal",
+        //     "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/Dk4rSo6MxAOYkCByhQMw8A/ms.jpg",
+        //     "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+        //     "url": "http://www.yelp.com/biz/toni-neal-atlanta-2?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "Salon Theory",
+        //             "290 Martin Luther King St SE,Ste 101",
+        //             "Atlanta, GA 30312"
+        //         ],
+        //         "geo_accuracy": 8.0,
+        //         "postal_code": "30312",
+        //         "country_code": "US",
+        //         "address": [
+        //             "Salon Theory",
+        //             "290 Martin Luther King St SE,Ste 101"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.7480735778809,
+        //             "longitude": -84.3788070678711
+        //         },
+        //         "state_code": "GA"
+        //     },
+        //     "phone": "4048560254",
+        //     "snippet_text": "Do your tresses need attention?....Salon  Theory 's the joint!  Toni is a dynamic stylist and personality. ...Keesi and Angela ensured my welcome and...",
+        //     "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BgcvDE-HAKyY1QkSfEyr2w/ms.jpg",
+        //     "categories": [
+        //         [
+        //             "Hair Extensions",
+        //             "hair_extensions"
+        //         ],
+        //         [
+        //             "Cosmetics & Beauty Supply",
+        //             "cosmetics"
+        //         ],
+        //         [
+        //             "Hair Stylists",
+        //             "hairstylists"
+        //         ]
+        //     ],
+        //     "display_phone": "+1-404-856-0254",
+        //     "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        //     "id": "toni-neal-atlanta-2",
+        //     "is_closed": false,
+        //     "distance": 3150.140025226564
+        // },
+        // {
+        //     "is_claimed": false,
+        //     "rating": 5.0,
+        //     "mobile_url": "http://m.yelp.com/biz/spoiled-opulence-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        //     "review_count": 4,
+        //     "name": "Spoiled Opulence Salon",
+        //     "snippet_image_url": "http://s3-media1.fl.yelpcdn.com/photo/E5JZuHmqv0fLVraCkURJrA/ms.jpg",
+        //     "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+        //     "url": "http://www.yelp.com/biz/spoiled-opulence-salon-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "948 Marietta St NW",
+        //             "Ste 3",
+        //             "Atlanta, GA 30318"
+        //         ],
+        //         "geo_accuracy": 9.5,
+        //         "postal_code": "30318",
+        //         "country_code": "US",
+        //         "address": [
+        //             "948 Marietta St NW",
+        //             "Ste 3"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.778398,
+        //             "longitude": -84.409119
+        //         },
+        //         "state_code": "GA"
+        //     },
+        //     "menu_date_updated": 1442017891,
+        //     "phone": "4047330555",
+        //     "snippet_text": "I get my hair done here by Al. Al does an absolute amazing job and it's worth every penny. Every time I leave the salon I feel like a supermodel and...",
+        //     "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VsqZlYZDDizQldI3RE-Usg/ms.jpg",
+        //     "categories": [
+        //         [
+        //             "Hair Extensions",
+        //             "hair_extensions"
+        //         ],
+        //         [
+        //             "Hair Stylists",
+        //             "hairstylists"
+        //         ]
+        //     ],
+        //     "display_phone": "+1-404-733-0555",
+        //     "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        //     "menu_provider": "single_platform",
+        //     "id": "spoiled-opulence-salon-atlanta",
+        //     "is_closed": false,
+        //     "distance": 3370.414533568369
+        // },
+
+
+        // {
+        //     "is_claimed": true,
+        //     "rating": 4.0,
+        //     "mobile_url": "http://m.yelp.com/biz/monique-kincade-atlanta-6?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        //     "review_count": 4,
+        //     "name": "Monique Kincade",
+        //     "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/sSjL1Z4_DofDtf2q7CbV8g/ms.jpg",
+        //     "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        //     "url": "http://www.yelp.com/biz/monique-kincade-atlanta-6?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //     "location": {
+        //         "city": "Atlanta",
+        //         "display_address": [
+        //             "670 10th St NW",
+        //             "Westside / Home Park",
+        //             "Atlanta, GA 30318"
+        //         ],
+        //         "geo_accuracy": 9.5,
+        //         "neighborhoods": [
+        //             "Westside / Home Park"
+        //         ],
+        //         "postal_code": "30318",
+        //         "country_code": "US",
+        //         "address": [
+        //             "670 10th St NW"
+        //         ],
+        //         "coordinate": {
+        //             "latitude": 33.7813307,
+        //             "longitude": -84.4093168
+        //         },
+        //         "state_code": "GA"
+        //     },
+        //     "deals": [
+        //         {
+        //             "what_you_get": "You get a voucher redeemable for $75 at Monique Kincade.\nPrint out your voucher, or redeem on your phone with the <a href=\"http://www.yelp.com/mobile?source=deal_marketing\">Yelp app</a>.",
+        //             "time_start": 1386305318,
+        //             "title": "$50 for $75",
+        //             "url": "http://www.yelp.com/deals/monique-kincade-hair-studio-atlanta?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //             "additional_restrictions": "Promotion lasts for 1 year from date of purchase. After that period, your voucher is redeemable for the amount you paid, less any value you may have received. Not valid with other vouchers, certificates, or offers. Voucher can only be used for services, not retail products. Only 1 voucher(s) can be purchased and redeemed per person. Up to 3 can be purchased as gifts for others. Subject to the <a target=\"_blank\" href=\"http://www.yelp.com/tos/general_b2c_us_20120911\">General Terms</a>.",
+        //             "options": [
+        //                 {
+        //                     "original_price": 7500,
+        //                     "title": "$50 for $75",
+        //                     "price": 5000,
+        //                     "purchase_url": "https://www.yelp.com/checkout/deal/us0-GXhQzuMv9uLzOEXxpw?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=DwshjqBPkHseybL9gpVhBg",
+        //                     "remaining_count": 50,
+        //                     "formatted_original_price": "$75",
+        //                     "formatted_price": "$50",
+        //                     "is_quantity_limited": true
+        //                 }
+        //             ],
+        //             "image_url": "https://s3-media1.fl.yelpcdn.com/dphoto/UQdC3Wn7YlPvmO5NtZCZwg/m.jpg",
+        //             "id": "uC4fDQMUjH4ba0Cdq4eMlw",
+        //             "currency_code": "USD"
+        //         }
+        //     ],
+        //     "phone": "4045007583",
+        //     "snippet_text": "Monique is a great hair Stylest!! \nI did keratin and it is made my hair looking fab.\nThank you !!",
+        //     "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9pyFCYCzsby0_zAqIpLOeg/ms.jpg",
+        //     "categories": [
+        //         [
+        //             "Hair Extensions",
+        //             "hair_extensions"
+        //         ],
+        //         [
+        //             "Hair Stylists",
+        //             "hairstylists"
+        //         ]
+        //     ],
+        //     "display_phone": "+1-404-500-7583",
+        //     "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        //     "id": "monique-kincade-atlanta-6",
+        //     "is_closed": false,
+        //     "distance": 3693.3158978045817
+        // },
+
         {
             "is_claimed": false,
             "rating": 5.0,
@@ -536,6 +550,7 @@
             "is_closed": false,
             "distance": 3813.225868056256
         },
+
         {
             "is_claimed": true,
             "rating": 5.0,
@@ -587,6 +602,7 @@
             "is_closed": false,
             "distance": 4140.671992418889
         },
+
         {
             "is_claimed": true,
             "rating": 5.0,
@@ -644,6 +660,7 @@
             "is_closed": false,
             "distance": 4184.386974173908
         },
+
         {
             "is_claimed": true,
             "rating": 4.5,
@@ -699,6 +716,7 @@
             "is_closed": false,
             "distance": 4245.422406275001
         },
+
         {
             "is_claimed": true,
             "rating": 5.0,
@@ -757,6 +775,7 @@
             "is_closed": false,
             "distance": 5304.350694226536
         },
+
         {
             "is_claimed": true,
             "rating": 4.5,
@@ -816,6 +835,7 @@
             "is_closed": false,
             "distance": 5422.182869998755
         },
+
         {
             "is_claimed": true,
             "rating": 5.0,
@@ -867,6 +887,7 @@
             "is_closed": false,
             "distance": 5437.841515296921
         },
+
         {
             "is_claimed": true,
             "rating": 4.0,
@@ -914,6 +935,7 @@
             "is_closed": false,
             "distance": 6131.287411883428
         },
+
         {
             "is_claimed": false,
             "rating": 4.0,
@@ -961,6 +983,7 @@
             "is_closed": false,
             "distance": 6204.901887763518
         },
+
         {
             "is_claimed": true,
             "rating": 5.0,
@@ -1012,6 +1035,7 @@
             "is_closed": false,
             "distance": 6517.182547043968
         },
+
         {
             "is_claimed": true,
             "rating": 4.0,
@@ -1059,6 +1083,7 @@
             "is_closed": false,
             "distance": 6685.185712788692
         },
+
         {
             "is_claimed": true,
             "rating": 4.5,

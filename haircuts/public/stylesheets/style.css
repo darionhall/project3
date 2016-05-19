@@ -113,8 +113,10 @@ footer {
 }
 /*MAP*/
 canvas{
-  margin-bottom: 0px;
+
+  margin-bottom: 60px;
 }
+
 #geocoder-container {
     position: relative;
     bottom: 300px;
@@ -123,15 +125,16 @@ canvas{
 }
 
 #geocoder-container > div {
-    min-width:50%;
-    margin-right:10%;
+    max-width:85%;
+    left: 10px;
+    top: 125px;
 }
+
 #directions{
   position: absolute;
-  bottom: 0px;
+  bottom: 210px;
   left: 0px;
-  width: 100%;
-  margin-bottom: 175px;
+  width: 30%;
 }
 .directions-control.directions-control-directions{
   position: fixed;
@@ -143,15 +146,15 @@ canvas{
   padding-top: 75px;
 }
 
-#geocoder-container > div {
-    min-width:50%;
-    margin-right:10%;
+.directions-control.directions-control-inputs{
+  min-width: 90%;
 }
 
 #map{
   position:relative;
   min-height: 300px;
   min-width: auto;
+  z-index: 0;
 }
 
 #info {
@@ -164,27 +167,15 @@ canvas{
   font-size: 11px;
 }
 
-
-/* For non touch devices, move control out of the way at small window widths */
-@media (max-width: 100%) {
-/* 767px - 15px for scrollbar */
-.mapzen-demo-iframed .mapboxgl-ctrl-topright {
-  top: 50px;
-  }
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #3BB2D0;
+    border-radius: 3px;
 }
 
-.mapboxgl-ctrl-geocoder {
-  margin-left: 11px;
-  margin-top: 20px;
-}
-
-.mapboxgl-canvas {
-  margin-top: 0px;
-  height: 300px;
-}
-
-.mapboxgl-map {
-  margin-top: 50px;
+.marker-title {
+    font-weight: 700;
 }
 
 .showuser {
@@ -218,5 +209,4 @@ form {
   background-color: #76C5D2;
   color: #000000;
 }
-
 
