@@ -1,24 +1,23 @@
 var express = require('express');
 var router = express.Router();
+var User = require('../models/user');
 
-              var User = require('../models/user');
-              //var Style = require('../models/style');
 
-              function makeError(res, message, status) {
-                res.statusCode = status;
-                var error = new Error(message);
-                error.status = status;
-                return error;
-              }
+function makeError(res, message, status) {
+  res.statusCode = status;
+  var error = new Error(message);
+  error.status = status;
+  return error;
+}
 
-               var authenticate = function(req, res, next) {
-                if(!req.isAuthenticated()) {
-                   res.redirect('/');
-                 }
-                 else {
-                   next();
-                 }
-               }
+var authenticate = function(req, res, next) {
+  if(!req.isAuthenticated()) {
+  res.redirect('/');
+}
+  else {
+    next();
+  }
+}
 
                 /* GET users listing. */
                 //router.get('/', authenticate, function(req, res, next) {
@@ -27,20 +26,18 @@ var router = express.Router();
                   //});
 
 
-              //SHOW
-              router.get('/:id', authenticate, function(req, res, next) {
-                console.log(currentUser);
-                var user = currentUser._id;
-                // var users = global.currentUser.users;
-
-                if (!user) return next(makeError(res, 'Document not found', 404));
-                res.render('users/show', { user: user} );
-              });
+//SHOW
+router.get('/:id', authenticate, function(req, res, next) {
+  console.log(currentUser);
+  var user = currentUser._id;
+  if (!user) return next(makeError(res, 'Document not found', 404));
+  res.render('users/show', { user: user} );
+});
 
 
               //EDIT
               router.get('/:id/edit', function(req, res, next) {
-              var user = currentUser.users.id(req.params.id);
+              var user = currentUser._id
               if (!user) return next(makeError(res, 'Document not found', 404));
               res.render('users/edit', { user: user});
             });

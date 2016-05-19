@@ -1,5 +1,5 @@
 
-body {
+ {
   background: no-repeat center center fixed;
   background-image: url(http://3.bp.blogspot.com/-jYkLwab4jkU/UFMVkotzMbI/AAAAAAAABb4/e_ESqgLIECY/s1600/reusage-blog-free-texture-paper-light-blue-watercolor-surfing-ocean-waves-of-stains.png);
   background-position-x: 50%;
@@ -27,4 +27,5 @@ body {
 h3 {
   font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin-left: 570px;
+  margin-top: 60px;
 }

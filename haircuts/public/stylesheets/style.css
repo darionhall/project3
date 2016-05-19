@@ -18,13 +18,13 @@ a {
   padding-right: 0px;
 }
 
-.container-fluid .jumbotron {
-  border-radius: 0px;
-}
-
 .navbar-default {
   background-color: #222222;
   border-radius: 0px;
+  margin-bottom: 0px;
+  border: none;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -44,7 +44,7 @@ a {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #85CD00;
+  background-color: #3BB2D0;
   color: #000000;
 }
 
@@ -66,28 +66,39 @@ h2 {
 
 .btn-danger:hover {
   background-color: #222222;
-  color: #FFFFFF;
+  color: #3BB2D0;
 }
 
-.navebar-default {
-  position: fixed;
+h3 {
+  margin-top: 70px;
 }
 
 .btn-primary {
   background-color: #222222;
   color: white;
   border: none;
-  border-radius: 10px;
+  margin-left: 7px;
 }
 
 .btn-primary:hover {
+  background-color: #3BB2D0;
+  color: #000000;
+}
+
+.btn-success {
   background-color: #222222;
-  color: #FFFFFF;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #3BB2D0;
+  color: #000000;
 }
 
 footer {
   width: 100%;
-  height: 30px;
+  height: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -98,9 +109,10 @@ footer {
 }
 /*MAP*/
 canvas{
-  margin-bottom: 60px;
 
+  margin-bottom: 60px;
 }
+
 #geocoder-container {
     position: relative;
     bottom: 300px;
@@ -129,6 +141,7 @@ canvas{
   margin-top: 0px;
   padding-top: 75px;
 }
+
 .directions-control.directions-control-inputs{
   min-width: 90%;
 }
@@ -160,4 +173,5 @@ canvas{
 .marker-title {
     font-weight: 700;
 }
+
 
