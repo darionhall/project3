@@ -44,8 +44,6 @@ app.use(session({ secret: "Don't get a bad haircut",
                   cookie: { maxAge: 24 * 60 * 60 * 1000 },
                   resave: true,
                   saveUninitialized: true }));
-
-app.use(session({ secret: "Don't get a bad haircut", cookie: {maxAge: 24 * 60 * 60 * 1000 }, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());

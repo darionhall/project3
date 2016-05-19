@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="stylesheet" type="text/css" href="/stylesheets/edit.css">
-  <% include ../partials/head %>
-</head>
-
-<body class="container-fluid">
-  <header>
-    <% include ../partials/header %>
-  </header>
-
-  <main>
-    <div>
-      <h1 class="showuser">
-        <b>First Name: </b><%= currentUser.local.fname %></b><br>
-        <b>Last Name:  </b><%= currentUser.local.lname %><br>
-        <b>Email:      </b><%= currentUser.local.email %><br>
-      </h1>
-    </div>
-
-
-    <!--<a href="/users" class="btn btn-primary">Back</a>
-    <a href="/users/<%= currentUser._id %>/edit" class="btn btn-danger">Edit</a>-->
-
-  </main>
-
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/edit.css">
+    <% include ../partials/head %>
+  </head>
+  <body class="container-fluid">
+    <header>
+      <% include ../partials/header %>
+    </header>
+    <main>
+      <div>
+        <h1 class="showuser">
+          <b>First Name: </b><%= currentUser.local.fname %></b><br>
+          <b>Last Name:  </b><%= currentUser.local.lname %><br>
+          <b>Email:      </b><%= currentUser.local.email %><br>
+        </h1>
+      </div>
+    </main>
   <footer>
-    <% include ../partials/footer %>
-  </footer>
-</body>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
 </html>
