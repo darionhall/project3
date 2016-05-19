@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/edit.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/edit.css">
     <% include ../partials/head %>
   </head>
   <body class="container-fluid">
@@ -9,15 +9,18 @@
       <% include ../partials/header %>
     </header>
     <main>
-      <div>
+      <div id= "showuser">
         <h1 class="showuser">
           <b>First Name: </b><%= currentUser.local.fname %></b><br>
+          <p></p>
           <b>Last Name:  </b><%= currentUser.local.lname %><br>
-          <b>Email:      </b><%= currentUser.local.email %><br>
+          <p></p>
+          <b>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:   </b><%= currentUser.local.email %><br>
         </h1>
+        <a href="/styles" id="checkout" class="btn btn-primary">Checkout your styles!</a>
       </div>
     </main>
-  <footer>
+    <footer>
       <% include ../partials/footer %>
     </footer>
   </body>

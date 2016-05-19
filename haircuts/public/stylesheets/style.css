@@ -175,11 +175,6 @@ footer {
     font-weight: 700;
 }
 
-.showuser {
-  margin-top: 70px;
-  margin-left: 400px;
-}
-
 .btn {
   border-radius: 0px;
 }
@@ -242,6 +237,23 @@ form {
   margin-left: 30px;
 }
 
-#showpage {
-  display: inline-block;
+.showuser{
+  background: rgba(34, 34, 34, .4);
+  min-width: 100%;
+  min-height: 150px;
+  margin-top: 85px;
+  color: white;
+}
+
+b{
+padding-left: 10px;
+
+}
+
+#checkout {
+  margin-left: 10px;
+}
+
+.img {
+  margin-left: 200px;
 }
