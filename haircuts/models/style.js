@@ -4,8 +4,8 @@ var ObjectId = Schema.ObjectId;
 
 var StyleSchema = new mongoose.Schema({
   type: { type: String,  required: true },
-  date: Date,
   tools: String,
+  date: Date,
   notes: String,
   duration: String,
   cost: String,

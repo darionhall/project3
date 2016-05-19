@@ -238,6 +238,10 @@ form {
   margin-left: 765px;
 }
 
-#fields {
+.fields {
   margin-left: 30px;
+}
+
+#showpage {
+  display: inline-block;
 }

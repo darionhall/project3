@@ -18,8 +18,8 @@
     <h3 class="email">Email your hairstyle preferences to your stylist:</h3>
     <!-- insert email form here -->
       <% include ../styles/email_form %>
-
-    <div id="fields">
+<div id="showpage">
+  <div id="fields">
       <h3><%= style.user_id %></h3>
 
       <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:&nbsp;&nbsp;</b><%= style.date %></p>
@@ -37,6 +37,9 @@
     <a href="/styles/<%= style._id %>/edit" class="btn btn-primary">Edit</a>
     </div>
 
+
+    <p><b><img style="height:200px; width:200px;" src="<%= style.avatar_url %>"></b></p>
+</div>
   </main>
 
 
