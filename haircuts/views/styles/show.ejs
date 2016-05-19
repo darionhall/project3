@@ -15,14 +15,28 @@
 
 
   <main>
-
-      <h3><%= style.user_id %></h3>
+    <h3 class="email">Email your hairstyle preferences to your stylist:</h3>
     <!-- insert email form here -->
       <% include ../styles/email_form %>
-    <br />
+
+    <div id="fields">
+      <h3><%= style.user_id %></h3>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:&nbsp;&nbsp;</b><%= style.date %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type:&nbsp;&nbsp;</b><%= style.type %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tools:&nbsp;&nbsp;</b><%= style.tools %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration:&nbsp;&nbsp;</b><%= style.duration %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cost:&nbsp;&nbsp;</b><%= style.cost %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stylist:&nbsp;&nbsp;</b><%= style.stylist %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salon:&nbsp;&nbsp;</b><%= style.salonName %></p>
+      <p><b>Salon Location:&nbsp;&nbsp;</b><%= style.salonLocation %></p>
+      <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notes:&nbsp;&nbsp;</b><%= style.notes %></p>
+      <p><b>Haircut Rating:&nbsp;&nbsp;</b><%= style.haircutRating %></p>
+
+
 
     <a href="/styles" class="btn btn-primary">Back</a>
     <a href="/styles/<%= style._id %>/edit" class="btn btn-primary">Edit</a>
+    </div>
 
   </main>
 

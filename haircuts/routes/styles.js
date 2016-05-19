@@ -65,11 +65,11 @@ router.get('/:id', authenticate, function(req, res, next) {
 router.post('/send', function (req, res, next) {
   console.log(req.body, global.currentUser.local.email);
     buttonAction1(res);
-    var textMessage = "Type: " + req.body.type + " \n Tools: " + req.body.tools + " \n Duration: " + req.body.duration + " \n Notes: " + req.body.notes
+    var textMessage = "\n Type: " + req.body.type + " \n Tools: " + req.body.tools + " \n Duration: " + req.body.duration + " \n Cost: " + req.body.cost + " \n Stylist: " + req.body.stylist + " \n Salon: " + req.body.salonName + " \n Salon Location: " + req.body.salonLocation + " \n Notes: " + req.body.notes + " \n Haircut Rating: " + req.body.haircutRating
     var payload   = {
       to      : req.body.email,
       from    : global.currentUser.local.email,
-      subject : 'Style',
+      subject : 'Style.Up',
       text    : textMessage
     };
     // var error;
@@ -96,7 +96,8 @@ router.post('/', authenticate, function(req, res, next) {
     cost: req.body.cost,
     stylist: req.body.stylist,
     haircutRating: req.body.haircutRating,
-    salonName: req.body.salonName
+    salonName: req.body.salonName,
+    salonLocation: req.body.salonLocation
   };
   /* Since a user's styles are an embedded document, we just need to push a new style to the user's list of styles and save the user. */
   currentUser.styles.push(style);
@@ -131,6 +132,7 @@ router.put('/:id', authenticate, function(req, res, next) {
     style.stylist = req.body.stylist;
     style.haircutRating = req.body.haircutRating;
     style.salonName = req.body.salonName;
+    style.salonLocation = req.body.salonLocation;
     currentUser.save()
     .then(function(saved) {
       res.redirect('/styles');

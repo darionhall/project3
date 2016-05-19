@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 //do we need to reference user model?
 
-var addressSubschema = {
-    street: String, number: String, zip: String, city: String
-}
+//var addressSubschema = {
+//    street: String, number: String, zip: String, city: String
+//}
 // img path
 var imgPath = '/path/to/some/img.png';
 
@@ -13,11 +13,11 @@ var StyleSchema = new mongoose.Schema({
   notes: String,
   duration: String,
 //  media: {data: Buffer, contentType: String},
-  cost: Number,
+  cost: String,
   stylist: String,
-  haircutRating: Number,
+  haircutRating: String,
   salonName: String,
-  salonLocation: [addressSubschema],
+  salonLocation: String,
   //user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
 }, { timestamps: true });  // createdAt, updatedAt
 

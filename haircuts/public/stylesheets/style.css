@@ -79,7 +79,7 @@ h3 {
   background-color: #222222 !important;
   color: white;
   border: none;
-  margin-left: 7px;
+  margin-left: 40px;
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
@@ -207,3 +207,37 @@ form {
   color: #000000;
 }
 
+#emailForm {
+  background-color: #222222;
+  color: #FFFFFF;
+  border-color: #222222;
+  border-style: solid;
+  border-width: 15px;
+  float: right;
+  margin-right: 30px;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#button1 {
+  background-color: #222222;
+  color: white !important;
+  border: none;
+}
+
+#button1:hover {
+  background-color: #222222 !important;
+  color: #76C5D2 !important;
+}
+
+.email {
+  margin-right: 30px;
+  width: 460px;
+  font-size: 20px;
+  margin-left: 765px;
+}
+
+#fields {
+  margin-left: 30px;
+}
