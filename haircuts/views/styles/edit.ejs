@@ -14,6 +14,7 @@
 
     <h3>Edit</h3>
     <form class="style-form" action="/styles/<%= style._id %>?_method=PUT" method="post">
+
       <div class="form-group">
         <label for="avatar_url">Picture</label>
           <input type="file" id="file_input" name="avatar_url" value=""/>
@@ -35,11 +36,11 @@
       </div>
 
       <div class="form-group">
-        <label for="createdAt">Haircut Date</label>
+        <label for="date">Haircut Date</label>
           <input type="Date"
                  class="form-control"
-                 name="createdAt"
-                 value="<%= style.createdAt %>"/>
+                 name="date"
+                 value="<%= style.date %>"/>
       </div>
 
       <div class="form-group">

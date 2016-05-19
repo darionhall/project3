@@ -1,9 +1,6 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
-      </a>
     </div>
 
     <ul class="nav navbar-nav navbar-left">
@@ -14,7 +11,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if (currentUser) { %>
-        <li><a href="/users/<%= currentUser._id %>" ><%= currentUser.local.email %></a></li>
+        <li><a href="/users/<%= currentUser._id %>" ><%= currentUser.local.fname %></a></li>
         <li><a href="/logout">Logout</a></li>
       <% } else { %>
         <li><a href="/login">Login</a></li>

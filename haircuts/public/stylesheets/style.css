@@ -1,5 +1,3 @@
-
-
 html, body {
   height:100%;
   padding-left: 0px;
@@ -8,6 +6,7 @@ html, body {
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #76C5D2;
 }
 
 a {
@@ -20,13 +19,13 @@ a {
   padding-right: 0px;
 }
 
-.container-fluid .jumbotron {
-  border-radius: 0px;
-}
-
 .navbar-default {
   background-color: #222222;
   border-radius: 0px;
+  margin-bottom: 0px;
+  border: none;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -46,7 +45,7 @@ a {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  background-color: #85CD00;
+  background-color: #76C5D2;
   color: #000000;
 }
 
@@ -66,30 +65,44 @@ h2 {
 
 }
 
-.btn-danger:hover {
-  background-color: #222222;
-  color: #FFFFFF;
+.btn-danger:hover, .btn:active, .btn:focus {
+  background-color: #222222 !important;
+  color: #76C5D2 !important;
+  border-color: #222222 !important;
 }
 
-.navebar-default {
-  position: fixed;
+h3 {
+  margin-top: 70px;
 }
 
 .btn-primary {
-  background-color: #222222;
+  background-color: #222222 !important;
   color: white;
   border: none;
-  border-radius: 10px;
+  margin-left: 40px;
 }
 
-.btn-primary:hover {
-  background-color: #222222;
-  color: #FFFFFF;
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #76C5D2 !important;
+  color: #000000 !important;
+  border-color: #76C5D2 !important;
+}
+
+.btn-success {
+  background-color: #222222 !important;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  background-color: #76C5D2 !important;
+  color: #000000 !important;
+  border-color: #76C5D2 !important;
 }
 
 footer {
   width: 100%;
-  height: 30px;
+  height: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -99,9 +112,7 @@ footer {
   color: grey;
 }
 /*MAP*/
-canvas{
-  margin-bottom: 60px
-}
+
 #geocoder-container {
     position: relative;
     bottom: 300px;
@@ -110,35 +121,37 @@ canvas{
 }
 
 #geocoder-container > div {
-    min-width:50%;
-    margin-right:10%;
+    max-width:85%;
+    left: 10px;
+    top: 125px;
 }
+
 #directions{
   position: absolute;
-  bottom: 0px;
+  bottom: 186px;
   left: 0px;
-  width: 100%;
+  width: 30%;
 }
 .directions-control.directions-control-directions{
   position: fixed;
 }
-.mapbox-directions-route-summary{
 
-}
 #directions-control{
   bottom: 150px;
   margin-top: 0px;
   padding-top: 75px;
+}
 
+.directions-control.directions-control-inputs{
+  min-width: 90%;
 }
-#geocoder-container > div {
-    min-width:50%;
-    margin-right:10%;
-}
+
 #map{
   position:relative;
   min-height: 300px;
   min-width: auto;
+  z-index: 0;
+  margin-top: 50px;
 }
 
 #info {
@@ -151,11 +164,80 @@ canvas{
   font-size: 11px;
 }
 
-/* For non touch devices, move control out of the way at small window widths */
-@media (max-width: 100%) {
-/* 767px - 15px for scrollbar */
-.mapzen-demo-iframed .mapboxgl-ctrl-topright {
-  top: 50px;
-  }
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #3BB2D0;
+    border-radius: 3px;
 }
 
+.marker-title {
+    font-weight: 700;
+}
+
+.showuser {
+  margin-top: 70px;
+  margin-left: 400px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.style-form {
+  border-radius: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+form {
+  border-radius: 0px;
+}
+
+.btn-default {
+  background-color: #222222;
+  color: white;
+  border: none;
+}
+
+.btn-default:hover {
+  background-color: #76C5D2;
+  color: #000000;
+}
+
+#emailForm {
+  background-color: #222222;
+  color: #FFFFFF;
+  border-color: #222222;
+  border-style: solid;
+  border-width: 15px;
+  float: right;
+  margin-right: 30px;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#button1 {
+  background-color: #222222;
+  color: white !important;
+  border: none;
+}
+
+#button1:hover {
+  background-color: #222222 !important;
+  color: #76C5D2 !important;
+}
+
+.email {
+  margin-right: 30px;
+  width: 460px;
+  font-size: 20px;
+  margin-left: 765px;
+}
+
+#fields {
+  margin-left: 30px;
+}

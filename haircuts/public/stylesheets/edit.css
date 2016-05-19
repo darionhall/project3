@@ -14,8 +14,14 @@ form {
   background-color: #222222;
   padding: 20px;
   border-radius: 15px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 label {
   color: #FFFFFF;
+}
+
+.showuser {
+  margin-top: 200px;
 }

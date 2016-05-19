@@ -2,6 +2,10 @@ var express = require('express');
 var router = express.Router();
 var Style = require('../models/style');
 
+//sendgrid (email)
+var sendgrid  = require('sendgrid')('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');
+
+
 function makeError(res, message, status) {
   res.statusCode = status;
   var error = new Error(message);
@@ -17,6 +21,11 @@ function makeError(res, message, status) {
   }
 }
 
+function buttonAction1(res){
+  res.send('ok');
+}
+
+
 // INDEX
 router.get('/', authenticate, function(req, res, next) {
   // get all the styles and render the index view
@@ -30,6 +39,7 @@ router.get('/', authenticate, function(req, res, next) {
 // NEW
 router.get('/new', authenticate, function(req, res, next) {
   var style = {
+    createdAt: '',
     type: '',
     date: '',
     notes: '',
@@ -52,10 +62,36 @@ router.get('/:id', authenticate, function(req, res, next) {
 });
 
 
+// EMAIL
+// add req.body.media to text when aws api is added
+router.post('/send', function (req, res, next) {
+  console.log(req.body, global.currentUser.local.email);
+    buttonAction1(res);
+    var textMessage = "\n Type: " + req.body.type + " \n Tools: " + req.body.tools + " \n Duration: " + req.body.duration + " \n Cost: " + req.body.cost + " \n Stylist: " + req.body.stylist + " \n Salon: " + req.body.salonName + " \n Salon Location: " + req.body.salonLocation + " \n Notes: " + req.body.notes + " \n Haircut Rating: " + req.body.haircutRating
+    var payload   = {
+      to      : req.body.email,
+      from    : global.currentUser.local.email,
+      subject : 'Style.Up',
+      text    : textMessage
+    };
+    // var error;
+    sendgrid.send(new sendgrid.Email(payload), function(err, json) {
+      if (err) {
+        console.error(err);
+      }
+      else{
+        console.log(true);
+      }
+    });
+    res.redirect('/styles', { style: style} );
+});
+
+
 // CREATE
 router.post('/', authenticate, function(req, res, next) {
   console.log(req.body);
   var style = {
+    creadtedAt: req.body.createdAt,
     type: req.body.type,
     date: req.body.date,
     notes: req.body.notes,
@@ -64,7 +100,8 @@ router.post('/', authenticate, function(req, res, next) {
     stylist: req.body.stylist,
     haircutRating: req.body.haircutRating,
     salonName: req.body.salonName,
-    avatar_url: req.body.avatar_url
+    avatar_url: req.body.avatar_url,
+    salonLocation: req.body.salonLocation
   };
   /* Since a user's styles are an embedded document, we just need to push a new style to the user's list of styles and save the user. */
   currentUser.styles.push(style);
@@ -87,9 +124,11 @@ router.get('/:id/edit', authenticate, function(req, res, next) {
 
 // UPDATE
 router.put('/:id', authenticate, function(req, res, next) {
- var style = currentUser.styles.id(req.params.id);
- if (!style) return next(makeError(res, 'Document not found', 404));
- else {
+
+  var style = currentUser.styles.id(req.params.id);
+  if (!style) return next(makeError(res, 'Document not found', 404));
+  else {
+    style.createdAt = req.body.createdAt;
     style.type = req.body.type;
     style.date = req.body.date;
     style.notes = req.body.notes;
@@ -99,6 +138,7 @@ router.put('/:id', authenticate, function(req, res, next) {
     style.haircutRating = req.body.haircutRating;
     style.salonName = req.body.salonName;
     style.avatar_url = req.body.avatar_url;
+    style.salonLocation = req.body.salonLocation;
     currentUser.save()
     .then(function(saved) {
       res.redirect('/styles');

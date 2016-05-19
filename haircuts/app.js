@@ -6,6 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override');
+var morgan = require('morgan');
+var $ = require('jQuery');
+//sendgrid
+var sendgrid  = require('sendgrid')('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');
 //passport
 var passport = require('passport');
 var session = require('express-session');
@@ -43,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //passport
 
 app.use(session({ secret: "Don't get a bad haircut",
+                  cookie: { maxAge: 24 * 60 * 60 * 1000 },
                   resave: true,
                   saveUninitialized: true }));
 app.use(passport.initialize());
