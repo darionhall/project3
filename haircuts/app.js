@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override');
 var morgan = require('morgan');
+var $ = require('jQuery');
 
 //passport
 var passport = require('passport');

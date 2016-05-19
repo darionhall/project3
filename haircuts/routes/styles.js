@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var Style = require('../models/style');
-
+//sendgrid (email)
+var sendgrid  = require('sendgrid')('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');
 
 
 function makeError(res, message, status) {
@@ -19,6 +20,8 @@ function makeError(res, message, status) {
     next();
   }
 }
+
+
 
 // INDEX
 router.get('/', authenticate, function(req, res, next) {
