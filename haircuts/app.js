@@ -6,18 +6,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override');
-var morgan = require('morgan');
-var fs = require('fs');
-var aws = require('aws-sdk');
-var session = require('express-session');
-var AWS_ACCESS_KEY  = process.env.AWS_ACCESS_KEY;
-var AWS_SECRET_KEY  = process.env.AWS_SECRET_KEY;
-var S3_BUCKET     = process.env.S3_BUCKET;
-
 //passport
 var passport = require('passport');
 var session = require('express-session');
 var flash = require('connect-flash');
+//images
+var aws = require('aws-sdk');
+var AWS_ACCESS_KEY  = process.env.AWS_ACCESS_KEY;
+var AWS_SECRET_KEY  = process.env.AWS_SECRET_KEY;
+var S3_BUCKET     = process.env.S3_BUCKET;
+
 
 //Routes
 var routes = require('./routes/index');
@@ -39,9 +37,18 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser({uploadDir:'./uploads'}));
 app.use(cookieParser());
 app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, 'public')));
+//passport
+
+app.use(session({ secret: "Don't get a bad haircut",
+                  resave: true,
+                  saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
 app.use(methodOverride(function(req, res){
  if (req.body && typeof req.body === 'object' && '_method' in req.body) {
    // look in urlencoded POST bodies and delete it
@@ -50,37 +57,22 @@ app.use(methodOverride(function(req, res){
    return method;
  }
 }));
-app.use(express.static(path.join(__dirname, 'public')));
-
-
-//passport
-
-app.use(session({ secret: "Don't get a bad haircut", cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true }));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(flash());
-
-require('./config/passport/passport')(passport);
-
-//Middleware that allows use to use the currentUser in our views and routing
-app.use(function(req, res, next){
-  global.currentUser = req.user;
-  next();
-});
 
 
 app.get('/sign_s3', function(req, res){
+    console.log('Going to amazon.')
     aws.config.update({accessKeyId: AWS_ACCESS_KEY , secretAccessKey: AWS_SECRET_KEY });
-    aws.config.update({region: '' , signatureVersion: '' });
+    aws.config.update({signatureVersion: '' });
     var s3 = new aws.S3();
     console.log(S3_BUCKET)
     var s3_params = {
         Bucket: S3_BUCKET,
         Key: req.query.file_name,
-        Expires: 60,
+        Expires: 600,
         ContentType: req.query.file_type,
         ACL: 'public-read'
     };
+    console.log('Set s3 params.')
     s3.getSignedUrl('putObject', s3_params, function(err, data){
         if(err){
             console.log(err);
@@ -93,8 +85,21 @@ app.get('/sign_s3', function(req, res){
             res.write(JSON.stringify(return_data));
             res.end();
         }
+        console.log('Got s3 signedURl.')
     });
 });
+
+
+
+require('./config/passport/passport')(passport);
+
+//Middleware that allows use to use the currentUser in our views and routing
+app.use(function(req, res, next){
+  global.currentUser = req.user;
+  next();
+});
+
+//Routes
 app.use('/', routes);
 app.use('/users', users);
 app.use('/styles', stylesRouter);
@@ -128,7 +133,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
+// app.listen(process.env.PORT || 3000);
 
 console.log('Running in %s mode', app.get('env'));
 

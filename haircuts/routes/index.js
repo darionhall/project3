@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-//var User = require('../models/user');
-//var Styles = require('../models/style');
 var passport = require('passport');
 
 /* GET home page. */
@@ -22,8 +20,7 @@ router.post('/signup', function(req, res, next) {
     failureFlash : true
   });
   return signUpStrategy(req, res, next);
-//     res.redirect('/user/:id');
-   });
+});
 
 
 // GET /login
@@ -38,7 +35,6 @@ router.get('/login', function(req, res, next) {
      failureRedirect : '/login',
      failureFlash : true
    });
-
    return loginProperty(req, res, next);
  });
 

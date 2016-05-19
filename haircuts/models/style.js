@@ -1,23 +1,24 @@
 var mongoose = require('mongoose');
-//do we need to reference user model?
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
 
-var addressSubschema = {
-    street: String, number: String, zip: String, city: String
-}
+// var addressSubschema = {
+//     street: String, number: String, zip: String, city: String
+// }
 
-var StyleSchema = new mongoose.Schema({
+var StyleSchema = new Schema({
   type: { type: String,  required: true },
-  tools: { type: String, required: true },
+  date: Date,
   notes: String,
   duration: String,
   cost: Number,
   stylist: String,
   haircutRating: Number,
   salonName: String,
-  salonLocation: [addressSubschema],
-  avatar_url: String
-  // user_id: {type: mongoose.Schema.User.ObjectId, ref:'User'},
-}, { timestamps: true });  // createdAt, updatedAt
+  // salonLocation: [addressSubschema],
+  avatar_url: String,
+  users: { type: Schema.ObjectId, ref:"User" }
+});
 
 function date2String(date) {
   var options = {
