@@ -1,10 +1,13 @@
+.background {
+  background-color: white;
+}
 
-.container-fluid .salonpic {
+.salonpic {
   border-radius: 0px;
   height: 270px;
+  background-color: white;
 }
 
 .pic {
-  height: 325px;
-  padding-bottom: 20px;
+  margin-top: 30px;
 }

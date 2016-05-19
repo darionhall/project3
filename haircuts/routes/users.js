@@ -10,24 +10,24 @@ function makeError(res, message, status) {
   return error;
 }
 
-var authenticate = function(req, res, next) {
-  if(!req.isAuthenticated()) {
-  res.redirect('/');
-}
-  else {
-    next();
-  }
-}
+//var authenticate = function(req, res, next) {
+//  if(!req.isAuthenticated()) {
+//  res.redirect('/');
+//}
+//  else {
+//    next();
+//  }
+//}
 
                 /* GET users listing. */
-                //router.get('/', authenticate, function(req, res, next) {
+                //router.get('/', function(req, res, next) {
                   //var users = global.currentUser.users;
                    // res.render('users/index', { users: users});
                   //});
 
 
 //SHOW
-router.get('/:id', authenticate, function(req, res, next) {
+router.get('/:id', function(req, res, next) {
   console.log(currentUser);
   var user = currentUser._id;
   if (!user) return next(makeError(res, 'Document not found', 404));
@@ -36,11 +36,11 @@ router.get('/:id', authenticate, function(req, res, next) {
 
 
               //EDIT
-              router.get('/:id/edit', function(req, res, next) {
-              var user = currentUser._id
-              if (!user) return next(makeError(res, 'Document not found', 404));
-              res.render('users/edit', { user: user});
-            });
+              //router.get('/:id/edit', function(req, res, next) {
+              //var user = currentUser._id
+              //if (!user) return next(makeError(res, 'Document not found', 404));
+              //res.render('users/edit', { user: user});
+            //});
 
               //router.get('/:id/edit', function(req, res, next) {
               //  User.findById(re.params.id)
@@ -61,34 +61,34 @@ router.get('/:id', authenticate, function(req, res, next) {
 
 
                //UPDATE
-              router.put('/:id', authenticate, function(req, res, next) {
-                var user = currentUser.users.id(req.params.id);
-                if (!user) return next(makeError(res, 'Document not found', 404));
-                else {
-                  user.email = req.body.email;
-                  user.password = req.body.username;
-                  currentUser.save()
-                  .then(function(saved) {
-                    res.redirect('/users');
-                  }, function(err) {
-                    return next(err);
-                  });
-                };
-              });
+//router.put('/:id', function(req, res, next) {
+//var user = currentUser.users.id(req.params.id);
+//if (!user) return next(makeError(res, 'Document not found', 404));
+//else {
+//user.email = req.body.email;
+//user.password = req.body.username;
+//currentUser.save()
+//.then(function(saved) {
+//res.redirect('/users');
+//                  }, function(err) {
+//return next(err);
+//                  });
+//                };
+//              });
 
               //DESTROY
-              router.delete('/:id', authenticate, function(req, res, next) {
-                var user = currentUser.users.id(req.params.id);
-                if (!user) return next(makeError(res, 'Document not found', 404));
-                var index = currentUser.users.indexOf(user);
-                currentUser.users.splice(index, 1);
-                currentUser.save()
-                .then(function(saved) {
-                  res.redirect('/users');
-                }, function(err) {
-                  return next(err);
-                });
-              });
+//router.delete('/:id', function(req, res, next) {
+//var user = currentUser.users.id(req.params.id);
+//if (!user) return next(makeError(res, 'Document not found', 404));
+//var index = currentUser.users.indexOf(user);
+//currentUser.users.splice(index, 1);
+//currentUser.save()
+//.then(function(saved) {
+//  res.redirect('/users');
+//                }, function(err) {
+//                  return next(err);
+//                });
+//              });
 
 
 module.exports = router;
