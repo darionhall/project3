@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 //do we need to reference user model?
 
+
 //var addressSubschema = {
 //    street: String, number: String, zip: String, city: String
 //}
@@ -8,6 +9,7 @@ var mongoose = require('mongoose');
 var imgPath = '/path/to/some/img.png';
 
 var StyleSchema = new mongoose.Schema({
+  //createdAt: { type: Date },
   type: { type: String,  required: true },
   tools: String,
   notes: String,
@@ -25,17 +27,12 @@ function date2String(date) {
   var options = {
     weekday: 'long', year: 'numeric', month: 'short',
     day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
-  };
-  return date.toLocaleDateString('en-US', options);
-}
+  }
+   return date.toLocaleDateString('en-US', options);
+ };
 
-StyleSchema.methods.getCreatedAt = function() {
-  return date2String(this.createdAt);
-};
-
-StyleSchema.methods.getUpdatedAt = function() {
-  return date2String(this.updatedAt);
-};
-
+ StyleSchema.methods.getCreatedAt = function() {
+   return date2String(this.createdAt);
+ };
 
 module.exports = mongoose.model('Style', StyleSchema);

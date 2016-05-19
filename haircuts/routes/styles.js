@@ -38,6 +38,7 @@ router.get('/', authenticate, function(req, res, next) {
 // NEW
 router.get('/new', authenticate, function(req, res, next) {
   var style = {
+    createdAt: '',
     type: '',
     tools: '',
     notes: '',
@@ -88,6 +89,7 @@ router.post('/send', function (req, res, next) {
 // CREATE
 router.post('/', authenticate, function(req, res, next) {
   var style = {
+    creadtedAt: req.body.createdAt,
     type: req.body.type,
     tools: req.body.tools,
     notes: req.body.notes,
@@ -123,6 +125,7 @@ router.put('/:id', authenticate, function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   else {
+    style.createdAt = req.body.createdAt;
     style.type = req.body.type;
     style.tools = req.body.tools;
     style.notes = req.body.notes;
