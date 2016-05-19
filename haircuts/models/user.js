@@ -4,9 +4,12 @@ var Style = require('./style');
 
 
 var User = new mongoose.Schema({
+
   local : {
-    email    : String,
-    password : String
+    fname : { type: String,  required: true },
+    lname : String,
+    email    : { type: String,  required: true },
+    password : { type: String,  required: true }
   },
   styles : [Style.schema]
 });

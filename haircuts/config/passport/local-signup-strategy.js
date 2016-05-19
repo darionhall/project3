@@ -17,8 +17,11 @@ var strategy = new LocalStrategy({
       else {
         // Create a new user
         var newUser            = new User();
+        newUser.local.fname    = req.body.fname;
+        newUser.local.lname    = req.body.lname;
         newUser.local.email    = email;
         newUser.local.password = newUser.encrypt(password);
+        console.log(req.body.fname);
 
         newUser.save(function(err) {
           return callback(err, newUser);
