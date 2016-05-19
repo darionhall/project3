@@ -76,7 +76,6 @@ router.post('/send', function (req, res, next) {
     sendgrid.send(new sendgrid.Email(payload), function(err, json) {
       if (err) {
         console.error(err);
-        // error = err;
       }
       else{
         console.log(true);
