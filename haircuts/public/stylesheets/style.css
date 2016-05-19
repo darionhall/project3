@@ -98,7 +98,8 @@ footer {
 }
 /*MAP*/
 canvas{
-  margin-bottom: 60px
+  margin-bottom: 60px;
+
 }
 #geocoder-container {
     position: relative;
@@ -108,35 +109,35 @@ canvas{
 }
 
 #geocoder-container > div {
-    min-width:50%;
-    margin-right:10%;
+    max-width:85%;
+    left: 10px;
+    top: 125px;
 }
+
 #directions{
   position: absolute;
-  bottom: 0px;
+  bottom: 210px;
   left: 0px;
-  width: 100%;
+  width: 30%;
 }
 .directions-control.directions-control-directions{
   position: fixed;
 }
-.mapbox-directions-route-summary{
 
-}
 #directions-control{
   bottom: 150px;
   margin-top: 0px;
   padding-top: 75px;
+}
+.directions-control.directions-control-inputs{
+  min-width: 90%;
+}
 
-}
-#geocoder-container > div {
-    min-width:50%;
-    margin-right:10%;
-}
 #map{
   position:relative;
   min-height: 300px;
   min-width: auto;
+  z-index: 0;
 }
 
 #info {
@@ -147,5 +148,16 @@ canvas{
   padding: 0;
   font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 11px;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #3BB2D0;
+    border-radius: 3px;
+}
+
+.marker-title {
+    font-weight: 700;
 }
 
