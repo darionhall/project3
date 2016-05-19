@@ -26,7 +26,6 @@ function buttonAction1(res){
 }
 
 
-
 // INDEX
 router.get('/', authenticate, function(req, res, next) {
   // get all the styles and render the index view
@@ -73,7 +72,6 @@ router.post('/send', function (req, res, next) {
       subject : 'Style',
       text    : textMessage
     };
-
     // var error;
     sendgrid.send(new sendgrid.Email(payload), function(err, json) {
       if (err) {
