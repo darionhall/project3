@@ -21,6 +21,10 @@ function makeError(res, message, status) {
   }
 }
 
+function buttonAction1(res){
+  res.send('ok');
+}
+
 
 
 // INDEX
@@ -54,6 +58,33 @@ router.get('/:id', authenticate, function(req, res, next) {
   var style = currentUser.styles.id(req.params.id);
   if (!style) return next(makeError(res, 'Document not found', 404));
   res.render('styles/show', { style: style} );
+});
+
+
+// EMAIL
+// add req.body.media to text when aws api is added
+router.post('/send', function (req, res, next) {
+  console.log(req.body, global.currentUser.local.email);
+    buttonAction1(res);
+    var textMessage = "Type: " + req.body.type + " \n Tools: " + req.body.tools + " \n Duration: " + req.body.duration + " \n Notes: " + req.body.notes
+    var payload   = {
+      to      : req.body.email,
+      from    : global.currentUser.local.email,
+      subject : 'Style',
+      text    : textMessage
+    };
+
+    // var error;
+    sendgrid.send(new sendgrid.Email(payload), function(err, json) {
+      if (err) {
+        console.error(err);
+        // error = err;
+      }
+      else{
+        console.log(true);
+      }
+    });
+    res.redirect('/styles', { style: style} );
 });
 
 
