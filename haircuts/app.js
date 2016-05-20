@@ -9,7 +9,7 @@ var methodOverride = require('method-override');
 var morgan = require('morgan');
 var $ = require('jquery');
 //sendgrid
-var sendgrid = require('sendgrid')(process.env.MY_KEY_1);
+var sendgrid = require('sendgrid')('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');
 //passport
 var passport = require('passport');
 var session = require('express-session');

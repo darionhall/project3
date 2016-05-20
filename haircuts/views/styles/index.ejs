@@ -4,28 +4,25 @@
 <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
   <% include ../partials/head %>
 </head>
-
 <body class="container-fluid">
   <header>
     <% include ../partials/header %>
   </header>
-
   <main>
     <div>
       <h3><a href="/styles/new" class="btn btn-primary">Add New Style</a></h3>
       <% styles.forEach(function(style) { %>
         <h4>
           <form method="POST" action="/styles/<%= style._id %>?_method=DELETE" class="stylebox">
-            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
             <a href="/styles/<%= style._id %>">
             <img style="height:200px; width:200px;" src="<%= style.avatar_url %>">
+            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
             </a>
           </form>
         </h4>
       <% }) %>
     </div>
   </main>
-
   <footer>
     <% include ../partials/footer %>
   </footer>

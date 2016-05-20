@@ -3,7 +3,7 @@ var router = express.Router();
 var Style = require('../models/style');
 
 //sendgrid
-var sendgrid = require('sendgrid')(process.env.MY_KEY_1);
+var sendgrid = require('sendgrid')('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');
 
 function makeError(res, message, status) {
   res.statusCode = status;
@@ -66,35 +66,35 @@ router.get('/:id', authenticate, function(req, res, next) {
 // add req.body.media to text when aws api is added
 router.post('/send', function (req, res, next) {
   console.log(req.body, global.currentUser.local.email);
-    buttonAction1(res);
-    var textMessage = "\n Type: " + req.body.type +
-                      " \n Tools: " + req.body.tools +
-                      " \n Duration: " + req.body.duration +
-                      " \n Cost: " + req.body.cost +
-                      " \n Stylist: " + req.body.stylist +
-                      " \n Salon: " + req.body.salonName +
-                      " \n Salon Location: " + req.body.salonLocation +
-                      " \n Notes: " + req.body.notes +
-                      " \n Haircut Rating: " + req.body.haircutRating +
-                      " \n Pictures: " + req.body.avatar_url
-    var payload   = {
-      to      : req.body.email,
-      from    : global.currentUser.local.email,
-      subject : 'Style.Up',
-      text    : textMessage
-    };
-    // var error;
-    sendgrid.send(new sendgrid.Email(payload), function(err, json) {
-      if (err) {
-        console.error(err);
-      }
-      else{
-        console.log(true);
-      }
-    });
-    res.redirect('/styles', { style: style} );
+  // buttonAction1(res);
+  var textMessage = "\n Type: " + req.body.type +
+                    " \n Tools: " + req.body.tools +
+                    " \n Duration: " + req.body.duration +
+                    " \n Cost: " + req.body.cost +
+                    " \n Stylist: " + req.body.stylist +
+                    " \n Salon: " + req.body.salonName +
+                    " \n Salon Location: " + req.body.salonLocation +
+                    " \n Notes: " + req.body.notes +
+                    " \n Haircut Rating: " + req.body.haircutRating +
+                    " \n Pictures: " + req.body.avatar_url
+  var payload   = {
+    to      : req.body.email,
+    from    : global.currentUser.local.email,
+    subject : 'Style.Up',
+    text    : textMessage
+  };
+  // var error;
+  sendgrid.send(new sendgrid.Email(payload), function(err, json) {
+    if (err) {
+      console.error('Sendgrid ERROR:', err);
+      return next(err);
+    }
+    else {
+      console.log('Sendgrid email sent successfully');
+      res.redirect('/styles');
+    }
+  });
 });
-
 
 // CREATE
 router.post('/', authenticate, function(req, res, next) {

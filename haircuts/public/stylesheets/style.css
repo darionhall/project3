@@ -6,11 +6,81 @@ html, body {
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(250, 250, 250);
 }
 
 a {
   color: #00B7FF;
 }
+
+#Intro{
+  margin: 0 auto;
+  width: 85%;
+  height: 200px;
+  background: #F8F7FC;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  text-align: center;
+}
+
+.Intro {
+  padding-top: 2.5%;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    margin: 20px;
+}
+
+
+.floating-box:hover figcaption {
+  opacity: 1;
+}
+
+.floating-box figcaption p {
+  display: table-cell;
+  font-size: 1.5em;
+  color: black;
+  position: bottom;
+  top: -40px;
+  width: 289px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  vertical-align: middle;
+}
+
+.floating-box:hover figcaption p {
+  -moz-transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
+.group {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.group:hover {
+  opacity: 0.5;
+}
+
+#team{
+  margin: 0 auto;
+  width: 85%;
+  height: 300px;
+  background: #F8F7FC;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  text-align: center;
+}
+
 .container-fluid {
   border-radius: 0px;
   margin: 0px;
@@ -60,7 +130,7 @@ h2 {
   color: white;
   border: none;
   padding-left: 80px;
-  padding-bottom: 10px;
+  padding-top: 10px;
 
 }
 
@@ -78,7 +148,7 @@ h3 {
   background-color: #222222 !important;
   color: white;
   border: none;
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
@@ -110,6 +180,11 @@ footer {
   text-align: center;
   color: grey;
 }
+
+#whitespace{
+  height: 50px;
+  width: 100%;
+}
 /*MAP*/
 
 #geocoder-container {
@@ -127,10 +202,11 @@ footer {
 
 #directions{
   position: absolute;
-  bottom: 186px;
-  left: 0px;
+  bottom: -165px;
+  left: 100px;
   width: 30%;
 }
+
 .directions-control.directions-control-directions{
   position: fixed;
 }
@@ -146,12 +222,13 @@ footer {
 }
 
 #map{
-  position:relative;
+  position: relative;
   min-height: 300px;
-  min-width: auto;
-  z-index: 0;
-  margin-top: 50px;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
+
 
 #info {
   position:fixed;
@@ -208,7 +285,7 @@ form {
   border-style: solid;
   border-width: 15px;
   float: right;
-  margin-right: 60px;
+  margin-right: 80px;
   width: 500px;
   margin-top: 20px;
   margin-bottom: 100px;
@@ -229,15 +306,22 @@ form {
   margin-right: 30px;
   width: 460px;
   font-size: 20px;
-  margin-left: 735px;
+  margin-left: 715px;
 }
 
 #fields {
-  margin-left: 30px;
+  width: 500px;
+  border-left-style: solid;
+  border-left-color: #CCC;
+  border-width: 1px;
+  border-right-style: solid;
+  border-right-color: #CCC;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .showuser{
-  background: rgba(34, 34, 34, .5);
+  background: rgba(34, 34, 34, .4);
   min-width: 100%;
   min-height: 150px;
   margin-top: 85px;
@@ -254,8 +338,34 @@ padding-left: 10px;
 }
 
 .img {
- margin-left: 200px;
- -moz-box-shadow: 0 0 10px #222;
- -webkit-box-shadow: 0 0 10px #222;
- box-shadow: 0 0 10px #222;
+  margin-left: -10px;
+}
+
+#showpage {
+  -moz-box-shadow: 0 0 10px #222;
+  -webkit-box-shadow: 0 0 10px #222;
+  box-shadow: 0 0 10px #222;
+  width: 500px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#buttons {
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.group {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.group:hover {
+  opacity: 0.5;
+}
+
+.Intro {
+  padding-top: 40px;
 }
